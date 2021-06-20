@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Caesium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>CAESIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Caesium (IUPAC spelling[6]) (also spelled cesium in American English)[note 1] is a chemical element with the symbol Cs and atomic number 55. It is a soft, silvery-golden alkali metal with a melting point of 28.5 °C (83.3 °F), which makes it one of only five elemental metals that are liquid at or near room temperature.[note 2] Caesium has physical and chemical properties similar to those of rubidium and potassium. The most reactive of all metals, it is pyrophoric and reacts with water even at −116 °C (−177 °F). It is the least electronegative element, with a value of 0.79 on the Pauling scale. It has only one stable isotope, caesium-133. Caesium is mined mostly from pollucite, while the radioisotopes, especially caesium-137, a fission product, are extracted from waste produced by nuclear reactors.
+
+      The German chemist Robert Bunsen and physicist Gustav Kirchhoff discovered caesium in 1860 by the newly developed method of flame spectroscopy. The first small-scale applications for caesium were as a "getter" in vacuum tubes and in photoelectric cells. In 1967, acting on Einstein's proof that the speed of light is the most constant dimension in the universe, the International System of Units used two specific wave counts from an emission spectrum of caesium-133 to co-define the second and the metre. Since then, caesium has been widely used in highly accurate atomic clocks.
+      <a href="https://en.wikipedia.org/wiki/Caesium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -Solid </li>
+            <li class="phy_list">Melting point -301.7 K ​(28.5 °C, ​83.3 °F)
+            </li>
+            <li class="phy_list">Boiling point  -944 K ​(671 °C, ​1240 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 1.93 g/cm3
+            </li>
+            
+            <li class="phy_list">Critical point - 1938 K, 9.4 MPa
+            </li>
+            <li class="phy_list">Heat of fusion  - 2.09 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  -63.9 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 32.210 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling - 0.79</li>
+            <li class="che_list">Vanderwaals radius -343 pm
+            </li>
+            <li class="che_list">Covalent radius -244±11 pm
+            </li>
+            <li class="che_list">Electronic shell - [Xe] 6s1
+            </li>
+            <li class="che_list">Energy of first ionisation- 375.7 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF CAESIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Petroleum exploration</li>
+            <li class="uses_list">Atomic clocks</li>
+            <li class="uses_list">Electric power and electronics </li>
+            <li class="uses_list">Centrifugation fluids </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="54xenon.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="56barium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

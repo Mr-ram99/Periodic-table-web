@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>GOLD</h2>
+ 
+       <div id="intro">
+        Gold is a chemical element with the symbol Au and atomic number 79, making it one of the higher atomic number
+        elements that occur naturally. In a pure form, it is a bright, slightly reddish yellow, dense, soft, malleable,
+        and ductile metal. Chemically, gold is a transition metal and a group 11 element. It is one of the least reactive
+        chemical elements and is solid under standard conditions. Gold often occurs in free elemental (native) form, as 
+        nuggets or grains, in rocks, in veins, and in alluvial deposits. It occurs in a solid solution series with the 
+        native element silver (as electrum), naturally alloyed with other metals like copper and palladium and also as 
+        mineral inclusions such as within pyrite. Less commonly, it occurs in minerals as gold compounds, often with 
+        tellurium (gold tellurides).<a href="https://en.wikipedia.org/wiki/gold">More...</a>
+       </div>
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1337.33 K ​(1064.18 °C, ​1947.52 °F)</li>
+            <li class="phy_list"> Boiling point	3243 K ​(2970 °C, ​5378 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	19.30 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	17.31 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	12.55 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	342 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	25.418 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 79</li>
+            <li class="che_list"> Atomic mass 196.9655 g.mol -1</li>
+            <li class="che_list"> Electronegativity ccording to Pauling 2.4</li>
+            <li class="che_list"> Density 19.3 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 1062 °C</li>
+            <li class="che_list"> Boiling point 2000 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.144 nm</li>
+            <li class="che_list"> Ionic radius 0.137 nm (+1)</li>
+            <li class="che_list"> Isotopes 7</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d10 6s1</li>
+            <li class="che_list"> Energy of first ionisation 888 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1974.6 kJ.mol -1</li>
+            <li class="che_list"> Standard potential +1,68 V ( Au+/ Au )</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF PLATINUM</h3>
+          <ul class="list">
+             <li class="uses_list">Gold is mainly used in jewellery.</li>
+             <li class="uses_list">The metal is also used for coinage, and has been used as standard for monetary systems in some countries.</li>
+             <li class="uses_list">It is also used in processors and chips.</li>
+             <li class="uses_list">Gold is used in electroplating.</li>
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="78platinum.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="80mercury.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

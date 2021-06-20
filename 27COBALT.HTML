@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>COBALT</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>COBALT</h2>
+
+      <div id="intro">
+         Cobalt is a chemical element with the symbol Co and atomic number 27. Like nickel, cobalt is found in the Earth's crust only in chemically combined form, save for small deposits found in alloys of natural meteoric iron. The free element, produced by reductive smelting, is a hard, lustrous, silver-gray metal.
+         some cobalt is produced specifically from one of a number of metallic-lustered ores, such as cobaltite (CoAsS). The element is, however, more usually produced as a by-product of copper and nickel mining. The copper belt in the Democratic Republic of the Congo (DRC) and Zambia yields most of the global cobalt production. World production in 2016 was 116,000 metric tons (114,000 long tons; 128,000 short tons) (according to Natural Resources Canada), and the DRC alone accounted for more than 50%.<a href="https://en.wikipedia.org/wiki/cobalt">More...</a>
+
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1768 K ​(1495 °C, ​2723 °F)</li>
+            <li class="phy_list">Boiling point - 3200 K ​(2927 °C, ​5301 °F)</li>
+            <li class="phy_list">Density (at liquid) - 8.86 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 16.06 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 377 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 24.81 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​hexagonal close-packed</li>
+            <li class="che_list">Thermal expansion - 13.0 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 100 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 62.4 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 209 GPa</li>
+            <li class="che_list">Bulk modulus - 180 GPa</li>
+            <li class="che_list">CAS Number - 	7440-48-4</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF COBALT</h3>
+         <ul class="list">
+            <li class="uses_list">Cobalt has been used in the production of high-performance alloys.</li>
+            <li class="uses_list">It can also be used to make rechargeable batteries, and the advent of electric vehicles and their success with consumers probably has a great deal to do with the DRC's soaring production.</li>
+            <li class="uses_list">Lithium cobalt oxide (LiCoO2) is widely used in lithium-ion battery cathodes.</li>
+            <li class="uses_list">Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="26iron.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="28nickel.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

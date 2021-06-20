@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Iodine</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>IODINE</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Iodine is a chemical element with the symbol I and atomic number 53. The heaviest of the stable halogens, it exists as a lustrous, purple-black non-metallic solid at standard conditions that melts to form a deep violet liquid at 114 degrees Celsius, and boils to a violet gas at 184 degrees Celsius. However, it readily sublimes with gentle heat, resulting in a widespread misconception even taught in some science textbooks that it does not melt at standard pressure. The element was discovered by the French chemist Bernard Courtois in 1811, and was named two years later by Joseph Louis Gay-Lussac, after the Greek ἰώδης "violet-coloured".
+
+      Iodine occurs in many oxidation states, including iodide (I−), iodate (IO−
+      3), and the various periodate anions. It is the least abundant of the stable halogens, being the sixty-first most abundant element. It is the heaviest essential mineral nutrient. Iodine is essential in the synthesis of thyroid hormones.[4] Iodine deficiency affects about two billion people and is the leading preventable cause of intellectual disabilities. <a href="https://en.wikipedia.org/wiki/Iodine">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solid </li>
+            <li class="phy_list">Melting point -(I2) 386.85 K ​(113.7 °C, ​236.66 °F)
+            </li>
+            <li class="phy_list">Boiling point  -(I2) 457.4 K ​(184.3 °C, ​363.7 °F)
+            </li>
+            <li class="phy_list">Density (at STP) -  4.933 g/cm3
+            </li>
+            
+            <li class="phy_list">Triple point - 386.65 K, ​12.1 kPa
+            </li>
+            <li class="phy_list">Heat of fusion  - (I2) 15.52 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  -(I2) 41.57 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  -(I2) 54.44 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-2.66 </li>
+            <li class="che_list">Vanderwaals radius -198 pm
+            </li>
+            <li class="che_list">Atomic radius -140 pm</li>
+            <li class="che_list">Electronic shell -[Kr] 4d10 5s2 5p5
+            </li>
+            <li class="che_list">Energy of first ionisation-1008.4 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF IODINE</h3>
+         <ul class="list">
+            <li class="uses_list">The iodide and iodate anions are often used for quantitative volumetric analysis, for example in iodometry.</li>
+            <li class="uses_list">Spectroscopy</li>
+            <li class="uses_list"> Elemental iodine is used as a disinfectant either as the element, or as the water-soluble triiodide anion I3− generated in situ by adding iodide to poorly water-soluble elemental iodine.</li>
+            <li class="uses_list">Iodine is an essential element for life and, at atomic number Z = 53, is the heaviest element commonly needed by living organisms. </li>
+            
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="52tellurium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="54xenon.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

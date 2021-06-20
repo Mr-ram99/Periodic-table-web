@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutetium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>LUTETIUM</h2>
+ 
+  
+ 
+       <div id="intro">
+        Lutetium is a chemical element with the symbol Lu and atomic number 71. It is a silvery white metal, which 
+        resists corrosion in dry air, but not in moist air. Lutetium is the last element in the lanthanide series, 
+        and it is traditionally counted among the rare earths. Lutetium is sometimes considered the first element of 
+        the 6th-period transition metals, although lanthanum is more often considered as such.<a href="https://en.wikipedia.org/wiki/Lutetium">More...</a>
+
+       </div>
+ 
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1925 K ​(1652 °C, ​3006 °F)</li>
+            <li class="phy_list"> Boiling point	3675 K ​(3402 °C, ​6156 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	9.841 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	9.3 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	ca. 22 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	414 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	26.86 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 71</li>
+            <li class="che_list"> Atomic mass 174.97 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.2</li>
+            <li class="che_list"> Density 9.7 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 1663 °C</li>
+            <li class="che_list"> Boiling point 3395 °C</li>
+            <li class="che_list"> Vanderwaals radius unknown</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 9</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d1 6s2</li>
+            <li class="che_list"> Energy of first ionisation 522.7 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1339 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 2.25 V</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF LUTETIUM</h3>
+          <ul class="list">
+             <li class="uses_list">It is used as a catalyst in petroleum cracking</li>
+             <li class="uses_list">Lutetium aluminium garnet (LuAG) is used as a phosphor in LED light bulbs.</li>
+             <li class="uses_list">It is mainly used for research purposes.</li>
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="70ytterbium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="72hafnium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

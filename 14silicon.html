@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silicon</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>SILICON</h2>
+ 
+   
+ 
+       <div id="intro">
+        Silicon is a chemical element with the symbol Si and atomic number 14. It is a hard, brittle crystalline
+        solid with a blue-grey metallic lustre, and is a tetravalent metalloid and semiconductor. It is a member
+        of group 14 in the periodic table: carbon is above it; and germanium, tin, and lead are below it. It is 
+        relatively unreactive because of its high chemical affinity for oxygen.<br>
+        Its melting and boiling points of 1414 °C and 3265 °C respectively are the second-highest among all the 
+        metalloids and nonmetals, being only surpassed by boron. Silicon is the eighth most common element in the
+        universe by mass, but very rarely occurs as the pure element in the Earth's crust. It is most widely distributed
+        in space in cosmic dusts, planetoids, and planets as various forms of silicon dioxide (silica) or silicates.<a href="https://en.wikipedia.org/wiki/silicon">More...</a>
+
+       </div>
+ 
+ 
+ 
+ 
+   
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1687 K ​(1414 °C, ​2577 °F)</li>
+            <li class="phy_list"> Boiling point	3538 K ​(3265 °C, ​5909 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	2.3290 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	2.57 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	50.21 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	383 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	19.789 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 14</li>
+            <li class="che_list"> Atomic mass 28.0855 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.8</li>
+            <li class="che_list"> Density 2.33 g.cm -3 at 20 °C</li>
+            <li class="che_list"> Melting point 1410 °C</li>
+            <li class="che_list"> Boiling point 3265 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.132 nm</li>
+            <li class="che_list"> Ionic radius 0.271 (-4) nm ; 0.041(+4)</li>
+            <li class="che_list"> Isotopes 5</li>
+            <li class="che_list"> Electronic shell [Ne] 3s23p2</li>
+            <li class="che_list"> Energy of first ionisation 786.3 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1576.5 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation 3228.3 kJ.mol -1</li>
+            <li class="che_list"> Energy of fourth ionisation 4354.4 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF SILICON</h3>
+          <ul class="list">
+             <li class="uses_list">The element silicon is used extensively as a semiconductor in solid-state devices.</li>
+             <li class="uses_list">Silicone rubber is used as a waterproof sealant in bathrooms and around windows, pipes and roofs.</li>
+             <li class="uses_list">Silicon carbides are important abrasives and are also used in lasers</li>
+             <li class="uses_list">Sand (silicon dioxide or silica) and clay (aluminium silicate) are used to make concrete and cement.</li>
+             <li class="uses_list">Silicon, as silicate, is present in pottery, enamels and high-temperature ceramics.</li>
+          </ul>
+       </div>
+    </section>
+    <section id="prev_next">
+      <div id="prev">
+         <a href="13aluminium.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="15phosphorus.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

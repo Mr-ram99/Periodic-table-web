@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Molybdenum</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>MOLYBDENUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Molybdenum is a chemical element with the symbol Mo and atomic number 42. The name is from Neo-Latin molybdaenum, which is based on Ancient Greek Μόλυβδος molybdos, meaning lead, since its ores were confused with lead ores.[6] Molybdenum minerals have been known throughout history, but the element was discovered (in the sense of differentiating it as a new entity from the mineral salts of other metals) in 1778 by Carl Wilhelm Scheele. The metal was first isolated in 1781 by Peter Jacob Hjelm.[7]
+
+      Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. The free element, a silvery metal with a gray cast, has the sixth-highest melting point of any element. It readily forms hard, stable carbides in alloys, and for this reason most of the world production of the element (about 80%) is used in steel alloys, including high-strength alloys and superalloys.<a href="https://en.wikipedia.org/wiki/molybdenum">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point -2896 K ​(2623 °C, ​4753 °F)</li>
+            <li class="phy_list">Boiling point  -	4912 K ​(4639 °C, ​8382 °F)</li>
+            <li class="phy_list">Density (at STP) -10.28 g/cm3  </li>
+            
+            <li class="phy_list">Triple point - </li>
+            <li class="phy_list">Critical point - </li>
+            <li class="phy_list">Heat of fusion  - 37.48 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization  - 598 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity  -24.06 J/(mol·K) </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-2.16 </li>
+            <li class="che_list">atomic radius -139 pm</li>
+            <li class="che_list">Isotopes -5 </li>
+            <li class="che_list">Electronic shell -[Kr] 4d5 5s1</li>
+            <li class="che_list">Energy of first ionisation-684.3 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF MOLYBDENUM</h3>
+         <ul class="list">
+            <li class="uses_list">making of alloys</li>
+            <li class="uses_list">used as a fertilizer </li>
+            <li class="uses_list">Molybdenum disulfide (MoS2) is used as a solid lubricant </li>
+            <li class="uses_list">Molybdenum trioxide (MoO3) is used as an adhesive between enamels and metals </li>
+            <li class="uses_list"> Ammonium heptamolybdate is used in biological staining.</li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="41niobium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="43technetium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

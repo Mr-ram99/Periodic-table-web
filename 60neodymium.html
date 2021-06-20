@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Neodymium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>NEODYMIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Neodymium is a chemical element with the symbol Nd and atomic number 60. Neodymium belongs to the lanthanide series and is a rare-earth element. It is a hard, slightly malleable silvery metal that quickly tarnishes in air and moisture. When oxidized, neodymium reacts quickly to produce pink, purple/blue and yellow compounds in the +2, +3 and +4 oxidation states.[5] Neodymium was discovered in 1885 by the Austrian chemist Carl Auer von Welsbach. It is present in significant quantities in the ore minerals monazite and bastnäsite. Neodymium is not found naturally in metallic form or unmixed with other lanthanides, and it is usually refined for general use. Although neodymium is classed as a rare-earth element, it is fairly common, no rarer than cobalt, nickel, or copper, and is widely distributed in the Earth's crust.[6] Most of the world's commercial neodymium is mined in China. <a href="https://en.wikipedia.org/wiki/Neodymium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid </li>
+            <li class="phy_list">Melting point - 1297 K ​(1024 °C, ​1875 °F)
+            </li>
+            <li class="phy_list">Boiling point  - 3347 K ​(3074 °C, ​5565 °F)
+            </li>
+            <li class="phy_list">Density (at STP) -  7.01 g/cm3
+            </li>
+            
+            <li class="phy_list">Heat of fusion  - 7.14 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - 289 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 27.45 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 1.14 </li>
+            <li class="che_list">Covalent radius - 201±6 pm
+            </li>
+            <li class="che_list">Atomic radius - 181 pm</li>
+            <li class="che_list">Electronic shell - [Xe] 4f4 6s2
+            </li>
+            <li class="che_list">Energy of first ionisation-533.1 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF NEODYMIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Neodymium magnets (actually an alloy, Nd2Fe14B) are the strongest permanent magnets known.</li>
+            <li class="uses_list">Neodymium magnets appear in products such as microphones, professional loudspeakers, in-ear headphones, guitar and bass guitar pick-ups.</li>
+            <li class="uses_list">Lasers </li>
+            <li class="uses_list">Neodymium glass (Nd:glass) is produced by the inclusion of neodymium oxide (Nd2O3) in the glass melt.  </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="59praseodymium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="61promethium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

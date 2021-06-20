@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nitrogen</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>NITROGEN</h2>
+ 
+  
+ 
+       <div id="intro">
+        Nitrogen is the chemical element with the symbol N and atomic number 7. It was first discovered and isolated
+        by Scottish physician Daniel Rutherford in 1772. Although Carl Wilhelm Scheele and Henry Cavendish had independently
+        done so at about the same time, Rutherford is generally accorded the credit because his work was published first.<br>
+
+        Nitrogen is the lightest member of group 15 of the periodic table, often called the pnictogens. 
+        It is a common element in the universe, estimated at about seventh in total abundance in the Milky Way
+        and the Solar System. At standard temperature and pressure, two atoms of the element bind to form dinitrogen,
+        a colourless and odorless diatomic gas with the formula N2.<br>
+        Many industrially important compounds, such as ammonia, nitric acid, organic nitrates (propellants and explosives),
+        and cyanides, contain nitrogen. The extremely strong triple bond in elemental nitrogen (N≡N), the second strongest 
+        bond in any diatomic molecule after carbon monoxide (CO),dominates nitrogen chemistry.<a href="https://en.wikipedia.org/wiki/Nitrogen">More...</a>
+       </div>
+ 
+ 
+ 
+ 
+    
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Gas</li>
+            <li class="phy_list"> Melting point	(N2) 63.15 K ​(−210.00 °C, ​−346.00 °F)</li>
+            <li class="phy_list"> Boiling point	(N2) 77.355 K ​(−195.795 °C, ​−320.431 °F)</li>
+            <li class="phy_list"> Density (at STP)	1.2506 g/L[1] at 0 °C, 1013 mbar</li>
+            <li class="phy_list"> when liquid (at b.p.)	0.808 g/cm3</li>
+            <li class="phy_list"> Triple point	63.151 K, ​12.52 kPa</li>
+            <li class="phy_list"> Critical point	126.21 K, 3.39 MPa</li>
+            <li class="phy_list"> Heat of fusion(N2) 0.72 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporisation(N2) 5.56 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity(N2) 29.124 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 7</li>
+            <li class="che_list"> Atomic mass 14.0067 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 3.0</li>
+            <li class="che_list"> Density 1.25*10-3 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point -210 °C</li>
+            <li class="che_list"> Boiling point -195.8 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.092 nm</li>
+            <li class="che_list"> Ionic radius 0.171 nm (-3) ; 0.011 (+5) ; 0.016 (+3)</li>
+            <li class="che_list"> Isotopes 4</li>
+            <li class="che_list"> Electronic shell [ He ] 2s22p3</li>
+            <li class="che_list"> Energy of first ionisation 1402 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 2856 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation 4578 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF NITROGEN</h3>
+          <ul class="list">
+             <li class="uses_list"> It is used to make fertilisers, nitric acid, nylon, dyes and explosives.</li>
+             <li class="uses_list"> It is used to preserve foods</li>
+             <li class="uses_list"> Liquid nitrogen is often used as a refrigerant.</li>
+             <li class="uses_list"> Large quantities of nitrogen are used in annealing stainless steel and other steel mill products.</li>
+             <li class="uses_list"> It is used for storing sperm, eggs and other cells for medical research and reproductive technology.</li>
+          </ul>
+ 
+ 
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="6carbon.html">Prev</a>
+   </div>
+   <div id="next">
+      <a href="8oxygen.html">Next</a>
+   </div>
+</section>
+ <hr>
+ <hr> <footer>
+    <div id="copyright">
+       2021 © Chem4fun.tech | All right reserved.
+    </div>
+ </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Antimony</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>ANTIMONY</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Antimony is a chemical element with the symbol Sb (from Latin: stibium) and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were powdered for use as medicine and cosmetics, often known by the Arabic name kohl.[5] Metallic antimony was also known, but it was erroneously identified as lead upon its discovery. The earliest known description of the metal in the West was written in 1540 by Vannoccio Biringuccio.
+
+      For some time, China has been the largest producer of antimony and its compounds, with most production coming from the Xikuangshan Mine in Hunan. The industrial methods for refining antimony are roasting and reduction with carbon or direct reduction of stibnite with iron. <a href="https://en.wikipedia.org/wiki/Antimony">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solid </li>
+            <li class="phy_list">Melting point -903.78 K ​(630.63 °C, ​1167.13 °F)
+            </li>
+            <li class="phy_list">Boiling point  -1908 K ​(1635 °C, ​2975 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 6.697 g/cm3
+            </li>
+            
+            
+            <li class="phy_list">Heat of fusion  - 19.79 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - 193.43 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 25.23 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-2.05 </li>
+            <li class="che_list">Vanderwaals radius -206 pm
+            </li>
+            <li class="che_list">Atomic radius -140 pm</li>
+            <li class="che_list">Electronic shell -[Kr] 4d10 5s2 5p3
+            </li>
+            <li class="che_list">Energy of first ionisation-834 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF ANTIMONY</h3>
+         <ul class="list">
+            <li class="uses_list">Antimony is mainly used as the trioxide for flame-proofing compounds, always in combination with halogenated flame retardants except in halogen-containing polymers. </li>
+            <li class="uses_list">Antimony forms a highly useful alloy with lead, increasing its hardness and mechanical strength. </li>
+            <li class="uses_list">as a stabilizer and catalyst for the production of polyethylene terephthalate. </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="50tin.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="52tellurium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

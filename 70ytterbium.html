@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ytterbium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>YTTERBIUM</h2>
+ 
+ 
+       <div id="intro">
+        Ytterbium is a chemical element with the symbol Yb and atomic number 70. It is the fourteenth and 
+        penultimate element in the lanthanide series, which is the basis of the relative stability of its +2 
+        oxidation state. However, like the other lanthanides, its most common oxidation state is +3, as in its 
+        oxide, halides, and other compounds. In aqueous solution, like compounds of other late lanthanides, 
+        soluble ytterbium compounds form complexes with nine water molecules. Because of its closed-shell electron 
+        configuration, its density and melting and boiling points differ significantly from those of most other 
+        lanthanides.<a href="https://en.wikipedia.org/wiki/ytterbium">More...</a>
+       </div>
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1097 K ​(824 °C, ​1515 °F)</li>
+            <li class="phy_list"> Boiling point	1469 K ​(1196 °C, ​2185 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	6.90 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	6.21 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	7.66 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	129 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	26.74 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 70</li>
+            <li class="che_list"> Atomic mass 173.04 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.1</li>
+            <li class="che_list"> Density 7 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 824 °C</li>
+            <li class="che_list"> Boiling point 1466 °C</li>
+            <li class="che_list"> Vanderwaals radius unknown</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 9</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 6s2</li>
+            <li class="che_list"> Energy of second ionisation 602.4 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1172.3 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation 2472.3 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 2.27 V</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF YTTERBIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Ytterbium is used in memory devices and tuneable lasers.</li>
+             <li class="uses_list">It can also be used as an industrial catalyst</li>
+             <li class="uses_list">It is used in doping of stainless steel</li>
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="69thulium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="71lutetium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

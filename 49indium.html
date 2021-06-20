@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Indium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>INDIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Indium is a chemical element with the symbol In and atomic number 49. Indium is the softest metal that is not an alkali metal. It is a silvery-white metal that resembles tin in appearance. It is a post-transition metal that makes up 0.21 parts per million of the Earth's crust. Indium has a melting point higher than sodium and gallium, but lower than lithium and tin. Chemically, indium is similar to gallium and thallium, and it is largely intermediate between the two in terms of its properties.[6] Indium was discovered in 1863 by Ferdinand Reich and Hieronymous Theodor Richter by spectroscopic methods. They named it for the indigo blue line in its spectrum. Indium was isolated the next year.
+
+      Indium is a minor component in zinc sulfide ores and is produced as a byproduct of zinc refinement. It is most notably used in the semiconductor industry, in low-melting-point metal alloys such as solders, in soft-metal high-vacuum seals, and in the production of transparent conductive coatings of indium tin oxide (ITO) on glass. Indium is considered a technology-critical element.
+      <a href="https://en.wikipedia.org/wiki/Indium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - Solid</li>
+            <li class="phy_list">Melting point -429.7485 K ​(156.5985 °C, ​313.8773 °F)
+            </li>
+            <li class="phy_list">Boiling point  -2345 K ​(2072 °C, ​3762 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 7.31 g/cm3
+            </li>
+            
+      
+            <li class="phy_list">Heat of fusion  - 3.281 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  -231.8 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 26.74 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-1.78 </li>
+            <li class="che_list">Vanderwaals radius -193 pm</li>
+            <li class="che_list">Atomic radius - 167 pm
+            </li>
+            <li class="che_list">Electronic shell -[Kr] 4d10 5s2 5p1
+            </li>
+            <li class="che_list">Energy of first ionisation-558.3 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF INDIUM</h3>
+         <ul class="list">
+            <li class="uses_list">stabilizing non-ferrous metals</li>
+            <li class="uses_list"> fusible alloys, solders, and electronics.</li>
+            <li class="uses_list">Indium tin oxide is used as a light filter in low-pressure sodium-vapor lamps.  </li>
+            <li class="uses_list">  semiconductor-related applications.</li>
+            
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="48cadmium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="50tin.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

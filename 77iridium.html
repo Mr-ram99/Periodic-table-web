@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iridium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>IRIDIUM</h2>
+
+ 
+       <div id="intro">
+        Iridium is a chemical element with the symbol Ir and atomic number 77. A very hard, brittle, silvery-white 
+        transition metal of the platinum group, iridium is considered to be the second-densest metal (after osmium) 
+        with a density of 22.56 g/cm3 as defined by experimental X-ray crystallography. However, at room temperature 
+        and standard atmospheric pressure, iridium has been calculated to have a density of 22.65 g/cm3, 0.04 g/cm3 
+        higher than osmium measured the same way.Still, the experimental X-ray crystallography value is considered to 
+        be the most accurate, and as such iridium is considered to be the second densest element.It is the most corrosion-resistant
+        metal, even at temperatures as high as 2000 °C. Although only certain molten salts and halogens are corrosive to
+        solid iridium, finely divided iridium dust is much more reactive and can be flammable.<a href="https://en.wikipedia.org/wiki/iridium">More...</a>
+       </div>
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	2719 K ​(2446 °C, ​4435 °F)</li>
+            <li class="phy_list"> Boiling point	4403 K ​(4130 °C, ​7466 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	22.56 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	19 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	41.12 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	564 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	25.10 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 77</li>
+            <li class="che_list"> Atomic mass 192.2 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 2.2</li>
+            <li class="che_list"> Density 22.4 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 2450 °C</li>
+            <li class="che_list"> Boiling point 4527 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.126 nm</li>
+            <li class="che_list"> Ionic radius 0.066 nm (+4)</li>
+            <li class="che_list"> Isotopes 11</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d7 6s2</li>
+            <li class="che_list"> Energy of first ionisation 886 kJ.mol -1</li>
+            <li class="che_list"> Standard potential + 1.0 V ( Ir2+/ Ir )</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF IRIDIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Iridium is uesed in pen tips and compass bearings.</li>
+             <li class="uses_list">It was used in making the standard metre bar.</li>
+             <li class="uses_list">It is also used for the contacts in spark plugs because of its high melting point and low reactivity.</li>
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="76osmium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="78platinum.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CALCIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>CALCIUM</h2>
+
+
+      <div id="intro">
+        Calcium is a chemical element with the symbol Ca and atomic number 20.
+        As an alkaline earth metal, calcium is a reactive metal that forms a dark oxide-nitride layer when exposed to air. Its physical and chemical properties are most similar to its heavier homologues strontium and barium.
+        It is the fifth most abundant element in Earth's crust and the third most abundant metal, after iron and aluminium. The most common calcium compound on Earth is calcium carbonate, found in limestone and the fossilised
+        remnants of early sea life; gypsum, anhydrite, fluorite, and apatite are also sources of calcium.<a href="https://en.wikipedia.org/wiki/calcium">More...</a>
+        
+      </div>
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point(H2) - 1115 K ​(842 °C, ​1548 °F)</li>
+            <li class="phy_list">Boiling point (H2) - 1757 K ​(1484 °C, ​2703 °F)</li>
+            <li class="phy_list">Density (at liquid) - 1.378 g/cm3</li>
+            <li class="phy_list">Heat of fusion (H2) - 8.54 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization (H2) - 154.7 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity (H2) - 25.929 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>ATOMIC PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​face-centred cubic (fcc)</li>
+            <li class="che_list">Speed of sound thin rod - 3810 m/s (at 20 °C)</li>
+            <li class="che_list">Thermal expansion - 22.3 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 201 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 33.6 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 20 GPa</li>
+            <li class="che_list">Bulk modulus - 17 GPa</li>
+            <li class="che_list">CAS Number - 7440-70-2></li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF CALCIUM</h3>
+         <ul class="list">
+            <li class="uses_list">The largest use of metallic calcium is in steelmaking</li>
+            <li class="uses_list">Calcium is used in maintenance-free automotive batteries</li>
+            <li class="uses_list">Calcium is used to strengthen aluminium alloys used for bearings</li>
+            <li class="uses_list">It can also be used to store hydrogen gas,</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="19potassium.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="21scandium.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+
+</body>
+
+</html>

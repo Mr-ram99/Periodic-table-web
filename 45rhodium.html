@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rhodium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>RHODIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Rhodium is a chemical element with the symbol Rh and atomic number 45. It is an ultra-rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal. It is a noble metal and a member of the platinum group. It has only one naturally occurring isotope, 103Rh. Naturally occurring rhodium is usually found as the free metal, as an alloy with similar metals, and rarely as a chemical compound in minerals such as bowieite and rhodplumsite. It is one of the rarest and most valuable precious metals.
+
+      Rhodium is found in platinum or nickel ores together with the other members of the platinum group metals. It was discovered in 1803 by William Hyde Wollaston in one such ore, and named for the rose color of one of its chlorine compounds. <a href="https://en.wikipedia.org/wiki/Rhodium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point -2237 K ​(1964 °C, ​3567 °F)</li>
+            <li class="phy_list">Boiling point  -3968 K ​(3695 °C, ​6683 °F)</li>
+            <li class="phy_list">Density (at STP) -12.41 g/cm3  </li>
+           
+            <li class="phy_list">Heat of fusion  -26.59 kJ/mol </li>
+            <li class="phy_list">Heat of vaporization  - 493 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity  -24.98 J/(mol·K) </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 2.28</li>
+            <li class="che_list">atomic radius -134 pm</li>
+            <li class="che_list">Covalent radius -142±7 pm</li>
+            <li class="che_list">Isotopes - Many </li>
+            <li class="che_list">Electronic shell -[Kr] 4d8 5s1</li>
+            <li class="che_list">Energy of first ionisation-719.7 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF RHODIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Rhodium is preferable to the other platinum metals in the reduction of nitrogen oxides to nitrogen and oxygen:
+
+               2 NO x → x O2 + N 2</li>
+            <li class="uses_list">Rhodium finds use in jewelry and for decorations. It is electroplated on white gold and platinum to give it a reflective white surface at time of sale, after which the thin layer wears away with use. This is known as rhodium flashing in the jewelry business.</li>
+            <li class="uses_list">Rhodium is used as an alloying agent for hardening and improving the corrosion resistance of platinum and palladium. </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="44ruthenium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="46palladium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

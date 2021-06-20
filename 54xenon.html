@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Xenon</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>XENON</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Xenon is a chemical element with the symbol Xe and atomic number 54. It is a colorless, dense, odorless noble gas found in Earth's atmosphere in trace amounts. Although generally unreactive, xenon can undergo a few chemical reactions such as the formation of xenon hexafluoroplatinate, the first noble gas compound to be synthesized.
+
+      Xenon is used in flash lamps and arc lamps,[16] and as a general anesthetic. The first excimer laser design used a xenon dimer molecule (Xe2) as the lasing medium,and the earliest laser designs used xenon flash lamps as pumps. Xenon is used to search for hypothetical weakly interacting massive particles and as the propellant for ion thrusters in spacecraft.Naturally occurring xenon consists of seven stable isotopes and two long-lived radioactive isotopes. More than 40 unstable xenon isotopes undergo radioactive decay, and the isotope ratios of xenon are an important tool for studying the early history of the Solar System.
+      <a href="https://en.wikipedia.org/wiki/Xenon">More..</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - gas</li>
+            <li class="phy_list">Melting point -161.40 K ​(−111.75 °C, ​−169.15 °F)
+            </li>
+            <li class="phy_list">Boiling point  -165.051 K ​(−108.099 °C, ​−162.578 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 5.894 g/L
+            </li>
+            
+            <li class="phy_list">Triple point - 161.405 K, ​81.77 kPa
+            </li>
+            <li class="phy_list">Critical point -289.733 K, 5.842 MPa
+            </li>
+            <li class="phy_list">Heat of fusion  -2.27 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - 12.64 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 21.01 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-2.6 </li>
+            <li class="che_list">Vanderwaals radius -216 pm
+            </li>
+            <li class="che_list">Covalent radius -140±9 pm
+            </li>
+            <li class="che_list">Electronic shell -[Kr] 4d10 5s2 5p6
+            </li>
+            <li class="che_list">Energy of first ionisation-1170.4 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF XENON</h3>
+         <ul class="list">
+            <li class="uses_list">Xenon is used in light-emitting devices called xenon flash lamps, used in photographic flashes and stroboscopic lamps.</li>
+            <li class="uses_list">Lasers</li>
+            <li class="uses_list">Xenon has been used as a general anesthetic, but it is more expensive than conventional anesthetics. </li>
+
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="53iodine.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="55caesium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

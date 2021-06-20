@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cerium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>CERIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Cerium is a chemical element with the symbol Ce and atomic number 58. Cerium is a soft, ductile, and silvery-white metal that tarnishes when exposed to air, and it is soft enough to be cut with a knife. Cerium is the second element in the lanthanide series, and while it often shows the +3 oxidation state characteristic of the series, it also has a stable +4 state that does not oxidize water. It is also considered one of the rare-earth elements. Cerium has no biological role in humans and is not very toxic.
+
+      Despite always occurring in combination with the other rare-earth elements in minerals such as those of the monazite and bastnäsite groups, cerium is easy to extract from its ores, as it can be distinguished among the lanthanides by its unique ability to be oxidized to the +4 state. It is the most common of the lanthanides, followed by neodymium, lanthanum, and praseodymium. It is the 26th-most abundant element, making up 66 ppm of the Earth's crust, half as much as chlorine and five times as much as lead.
+      <a href="https://en.wikipedia.org/wiki/Cerium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - Solid</li>
+            <li class="phy_list">Melting point - 1068 K ​(795 °C, ​1463 °F)
+            </li>
+            <li class="phy_list">Boiling point  - 3716 K ​(3443 °C, ​6229 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 6.770 g/cm3
+            </li>
+            <li class="phy_list">Heat of fusion  - 5.46 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - 398 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 26.94 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 1.12 </li>
+            <li class="che_list">Covalent radius - 204±9 pm</li>
+            <li class="che_list">Atomic radius -181.8 pm</li>
+            <li class="che_list">Electronic shell - [Xe] 4f1 5d1 6s2
+            </li>
+            <li class="che_list">Energy of first ionisation- 534.4 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF CERIUM</h3>
+         <ul class="list">
+            <li class="uses_list">The first use of cerium was in gas mantles.</li>
+            <li class="uses_list">Ceria is the most widely used compound of cerium. The main application of ceria is as a polishing compound, for example in chemical-mechanical planarization (CMP). </li>
+            <li class="uses_list">The photostability of pigments can be enhanced by the addition of cerium. </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="57lanthanum.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="59praseodymium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fluorine</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>FLUORINE</h2>
+ 
+       <div id="intro">
+        Fluorine is a chemical element with the symbol F and atomic number 9. It is the lightest halogen and exists
+        as a highly toxic pale yellow diatomic gas at standard conditions. As the most electronegative element, it is
+        extremely reactive, as it reacts with all other elements, except for argon, neon, and helium.<br>
+        Among the elements, fluorine ranks 24th in universal abundance and 13th in terrestrial abundance. 
+        Fluorite, the primary mineral source of fluorine which gave the element its name, was first described in 1529;
+        as it was added to metal ores to lower their melting points for smelting, the Latin verb fluo meaning "flow" gave
+        the mineral its name.<br>
+        Owing to the expense of refining pure fluorine, most commercial applications use fluorine compounds, with
+        about half of mined fluorite used in steelmaking. The rest of the fluorite is converted into corrosive hydrogen
+        fluoride en route to various organic fluorides, or into cryolite, which plays a key role in aluminium refining.
+        <a href="https://en.wikipedia.org/wiki/fluorine">More...</a>
+       </div>
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+             <li class="phy_list"> Phase at STP	Gas</li>
+             <li class="phy_list"> Melting point	(F2) 53.48 K ​(−219.67 °C, ​−363.41 °F)</li>
+             <li class="phy_list"> Boiling point	(F2) 85.03 K ​(−188.11 °C, ​−306.60 °F)</li>
+             <li class="phy_list"> Density (at STP)	1.696 g/L</li>
+             <li class="phy_list"> when liquid (at b.p.)	1.505 g/cm3</li>
+             <li class="phy_list"> Triple point	53.48 K, ​90 kPa</li>
+             <li class="phy_list"> Critical point	144.41 K, 5.1724 MPa</li>
+             <li class="phy_list"> Heat of vaporization	6.51 kJ/mol</li>
+             <li class="phy_list"> Molar heat capacity	Cp: 31 J/(mol·K) (at 21.1 °C)</li>
+                                                   <br>     Cv: 23 J/(mol·K) (at 21.1 °C)
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 9</li>
+            <li class="che_list"> Atomic mass 18.998403 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 4</li>
+            <li class="che_list"> Density 1.8*10-3 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point -219.6 °C</li>
+            <li class="che_list"> Boiling point -188 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.135 nm</li>
+            <li class="che_list"> Ionic radius 0.136 nm (-1) ; 0.007 (+7)</li>
+            <li class="che_list"> Isotopes 2</li>
+            <li class="che_list"> Electronic shell [ He ] 2s22p5</li>
+            <li class="che_list"> Energy of first ionisation 1680.6 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 3134 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation 6050 kJ mol-1</li>
+            <li class="che_list"> Standard potential -2.87 V</li>
+
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF FLUORINE</h3>
+          <ul class="list">
+             <li class="uses_list">Fluorine is critical for the production of nuclear material for nuclear power plants</li>
+             <li class="uses_list">Fluorine is used for the insulation of electric towers.</li>
+             <li class="uses_list">Hydrogen fluoride, a compound of fluorine, is used to etch glass.</li>
+             <li class="uses_list">Fluorine, like Teflon, is used to make plastics and is also important in dental health.</li>
+             <li class="uses_list">CFCs (chloro-fluoro-carbons) were once used as aerosol propellants and refrigerants</li>
+          </ul>
+ 
+ 
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="8oxygen.html">Prev</a>
+   </div>
+   <div id="next">
+      <a href="10neon.html">Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

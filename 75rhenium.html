@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhenium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>RHENIUM</h2>
+
+       <div id="intro">
+        Rhenium is a chemical element with the symbol Re and atomic number 75. It is a silvery-gray, heavy, 
+        third-row transition metal in group 7 of the periodic table. With an estimated average concentration of 1 
+        part per billion (ppb), rhenium is one of the rarest elements in the Earth's crust. Rhenium has the 
+        third-highest melting point and second-highest boiling point of any stable element at 5903 K.Rhenium 
+        resembles manganese and technetium chemically and is mainly obtained as a by-product of the extraction 
+        and refinement of molybdenum and copper ores. Rhenium shows in its compounds a wide variety of oxidation 
+        states ranging from −1 to +7.<a href="https://en.wikipedia.org/wiki/rhenium">More...</a>
+       </div>
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	3459 K ​(3186 °C, ​5767 °F)</li>
+            <li class="phy_list"> Boiling point	5903 K ​(5630 °C, ​10,170 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	21.02 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	18.9 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	60.43 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	704 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	25.48 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 75</li>
+            <li class="che_list"> Atomic mass 186.23 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.9</li>
+            <li class="che_list"> Density 20.5 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 3170 °C</li>
+            <li class="che_list"> Boiling point 5627 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.138 nm</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 9</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d5 6s2</li>
+            <li class="che_list"> Energy of first ionisation 759 kJ.mol -1</li>
+            <li class="che_list"> Standard potential 0.25 V ( ReO2/ Re )</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF RHENIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Rhenium alloys is used in oven filaments and x-rays machines.</li>
+             <li class="uses_list">It is also used as electrical contact material.</li>
+             <li class="uses_list">Rhenium catalysts are used for hydrogenation of fine chemicals.</li>
+             <li class="uses_list">some rhenium is used as turbine blades.</li>
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="74tungsten.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="76osmium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

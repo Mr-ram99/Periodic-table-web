@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>hydrogen</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+   
+
+   <div>
+      <h2>HYDROGEN</h2>
+   </div>
+
+
+
+   <div id="intro">
+
+      Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic
+      weight of 1.008,
+      hydrogen is the lightest element in the periodic table. Hydrogen is the most abundant chemical substance in
+      the
+      universe, constituting roughly 75% of all baryonic mass. Non-remnant stars are mainly composed of hydrogen
+      in
+      the
+      plasma state. The most common isotope of hydrogen, termed protium (name rarely used, symbol 1H), has one
+      proton
+
+      and no neutrons.
+      At standard temperature and pressure, hydrogen is a colorless, odorless, tasteless, non-toxic, nonmetallic,
+      highly combustible diatomic gas with the molecular formula H2. <a href="https://en.wikipedia.org/wiki/Hydrogen">More...</a>
+   </div>
+
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - gas</li>
+            <li class="phy_list">Melting point(H2) - 13.99 K ​(−259.16 °C, ​−434.49 °F)</li>
+            <li class="phy_list">Boiling point (H2) - 20.271 K ​(−252.879 °C, ​−423.182 °F)</li>
+            <li class="phy_list">Density (at STP) - 0.08988 g/L</li>
+            <li class="phy_list">when liquid (at m.p.) - 0.07 g/cm3 (solid: 0.0763 g/cm3)</li>
+            <li class="phy_list">when liquid (at b.p.) - 0.07099 g/cm3</li>
+            <li class="phy_list">Triple point - 13.8033 K, ​7.041 kPa</li>
+            <li class="phy_list">Critical point - 32.938 K, 1.2858 MPa</li>
+            <li class="phy_list">Heat of fusion (H2) - 0.117 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization (H2) - 0.904 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity (H2) - 28.836 J/(mol·K)</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling -2.1</li>
+            <li class="che_list">Density -0.0899*10 -3 g.cm -3 at 20 °C</li>
+            <li class="che_list">Melting point -- 259.2 °C </li>
+            <li class="che_list">Boiling point -- 252.8 °C</li>
+            <li class="che_list">Vanderwaals radius -0.12 nm</li>
+            <li class="che_list">Ionic radius -0.208 (-1) nm</li>
+            <li class="che_list">Isotopes - 3</li>
+            <li class="che_list">Electronic shell -1s1</li>
+            <li class="che_list">Energy of first ionisat1311 kJ.mol -1</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF HYDROGEN</h3>
+         <ul class="list">
+            <li class="uses_list">Main component of water</li>
+            <li class="uses_list">Hydrogen fuel cells produce electricity</li>
+            <li class="uses_list">In production of Fertilizers like Ammonia </li>
+            <li class="uses_list">Fuel Production </li>
+            <li class="uses_list">Industrial use </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="index.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="2helium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

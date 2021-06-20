@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chlorine</title>
+    <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>CHLORINE</h2>
+ 
+
+ 
+       <div id="intro">
+        Chlorine is a chemical element with the symbol Cl and atomic number 17. The second-lightest of the halogens, it appears
+        between fluorine and bromine in the periodic table and its properties are mostly intermediate between them.
+        Chlorine is a yellow-green gas at room temperature. It is an extremely reactive element and a strong oxidising
+        agent: among the elements, it has the highest electron affinity and the third-highest electronegativity on the
+        Pauling scale, behind only oxygen and fluorine.<br>
+        Because of its great reactivity, all chlorine in the Earth's crust is in the form of ionic chloride compounds,
+        which includes table salt. It is the second-most abundant halogen (after fluorine) and twenty-first most abundant
+        chemical element in Earth's crust. These crustal deposits are nevertheless dwarfed by the huge reserves of 
+        chloride in seawater.<a href="https://en.wikipedia.org/wiki/chlorine">More...</a>
+       </div>
+ 
+ 
+ 
+ 
+    
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Gas</li>
+            <li class="phy_list"> Melting point	(Cl2) 171.6 K ​(−101.5 °C, ​−150.7 °F)</li>
+            <li class="phy_list"> Boiling point	(Cl2) 239.11 K ​(−34.04 °C, ​−29.27 °F)</li>
+            <li class="phy_list"> Density (at STP)	3.2 g/L<br>
+                                  when liquid (at b.p.)	1.5625 g/cm3</li>
+            <li class="phy_list"> Critical point	416.9 K, 7.991 MPa</li>
+            <li class="phy_list"> Heat of fusion	(Cl2) 6.406 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporisation	(Cl2) 20.41 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	(Cl2) 33.949 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 17</li>
+            <li class="che_list"> Atomic mass 35.453 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 3.0</li>
+            <li class="che_list"> Density 3.21*10 -3 g.cm -3 at 20 °C</li>
+            <li class="che_list"> Melting point -101 °C</li>
+            <li class="che_list"> Boiling point -34.6 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.127 nm</li>
+            <li class="che_list"> Ionic radius 0.184 (-2) nm ; 0.029 nm (+6)</li>
+            <li class="che_list"> Isotopes 4</li>
+            <li class="che_list"> Electronic shell [Ne] 3s23p5</li>
+            <li class="che_list"> Energy of first ionisation 1255.7 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation	2298 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation	3822 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 1.36 V</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF CHLORINE</h3>
+          <ul class="list">
+             <li class="uses_list">It is used to treat drinking water and swimming pool water.</li>
+             <li class="uses_list">It is also used to make hundreds of consumer products from paper to paints.</li>
+             <li class="uses_list">About 20% of chlorine produced is used to make PVC.</li>
+             <li class="uses_list">Chlorine gas is itself very poisonous, and was used as a chemical weapon during the First World War.</li>
+       </div>
+    </section>
+    <section id="prev_next">
+      <div id="prev">
+         <a href="16sulphur.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="18argon.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

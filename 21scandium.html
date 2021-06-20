@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SCANDIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>SCANDIUM</h2>
+
+
+      <div id="intro">
+        Scandium is a chemical element with the symbol Sc and atomic number 21. A silvery-white metallic d-block element, 
+        it has historically been classified as a rare-earth element,[6] together with yttrium and the lanthanides.
+        Scandium is present in most of the deposits of rare-earth and uranium compounds, but it is extracted from these 
+        ores in only a few mines worldwide. Because of the low availability and the difficulties in the preparation of metallic scandium, 
+        which was first done in 1937, applications for scandium were not developed until the 1970s, when the positive effects of scandium 
+        on aluminium alloys were discovered, and its use in such alloys remains its only major application. The global trade of scandium oxide is 15–20 tonnes per year.<a href="https://en.wikipedia.org/wiki/scandium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point(H2) - 1814 K ​(1541 °C, ​2806 °F)</li>
+            <li class="phy_list">Boiling point (H2) - 3109 K ​(2836 °C, ​5136 °F)</li>
+            <li class="phy_list">Density (at liquid) - 2.80 g/cm3</li>
+            <li class="phy_list">Heat of fusion (H2) - 14.1 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization (H2) - 332.7 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity (H2) - 25.52 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>ATOMIC PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​hexagonal close-packed</li>
+            <li class="che_list">Thermal expansion - α, poly: 10.2 µm/(m·K) (at r.t.)</li>
+            <li class="che_list">Thermal conductivity - 201 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- α, poly: 562 nΩ·m (at r.t., calculated)</li>
+            <li class="che_list">Young's modulus - 74.4 GPa</li>
+            <li class="che_list">Bulk modulus - 56.6 GPa</li>
+            <li class="che_list">CAS Number - 	7440-20-2</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF SCANDIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Scandium is mainly used to create high-intensity lighting</li>
+            <li class="uses_list">Scandium is mainly used to create mercury vapor lamps</li>
+            <li class="uses_list">Used mainly for photography and television/movies</li>
+            <li class="uses_list">Scandium produces light that is very similar to natural sunlight, according to Chemicool.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="20calcium.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="22TITANIUM.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potassium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>POTASSIUM</h2>
+
+ 
+       <div id="intro">
+        Potassium is a chemical element with the symbol K (from Neo-Latin kalium) and atomic number 19. Potassium 
+        is a silvery-white metal that is soft enough to be cut with a knife with little force.Potassium metal reacts
+        rapidly with atmospheric oxygen to form flaky white potassium peroxide in only seconds of exposure. It was first
+        isolated from potash, the ashes of plants, from which its name derives. In the periodic table, potassium is one of
+        the alkali metals, all of which have a single valence electron in the outer electron shell, that is easily removed
+        to create an ion with a positive charge – a cation, that combines with anions to form salts. Potassium in nature 
+        occurs only in ionic salts. Elemental potassium reacts vigorously with water, generating sufficient heat to ignite
+        hydrogen emitted in the reaction, and burning with a lilac-colored flame. It is found dissolved in sea water 
+        (which is 0.04% potassium by weight), and occurs in many minerals such as orthoclase, a common constituent of 
+        granites and other igneous rocks.<a href="https://en.wikipedia.org/wiki/potassium">More...</a>
+       </div>
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	336.7 K ​(63.5 °C, ​146.3 °F)</li>
+            <li class="phy_list"> Boiling point	1032 K ​(759 °C, ​1398 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	0.89 g/cm3<br>
+                                  when liquid (at m.p.)	0.828 g/cm3</li>
+            <li class="phy_list"> Critical point	2223 K, 16 MPa</li>
+            <li class="phy_list"> Heat of fusion	2.33 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	76.9 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	29.6 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 19</li>
+            <li class="che_list"> Atomic mass 39.0983 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 0.8</li>
+            <li class="che_list"> Density 0.86 g.cm -3 at 0 °C</li>
+            <li class="che_list"> Melting point 63.2 °C</li>
+            <li class="che_list"> Boiling point 760 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.235 nm</li>
+            <li class="che_list"> Ionic radius 0.133 (+1)</li>
+            <li class="che_list"> Isotopes 5</li>
+            <li class="che_list"> Electronic shell [ Ar ] 4s1</li>
+            <li class="che_list"> Energy of first ionisation 418.6 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF POTASSIUM</h3>
+          <ul class="list">
+             <li class="uses_list">The greatest demand for potassium compounds is in fertilisers.</li>
+             <li class="uses_list">Potassium carbonate is used in the manufacture of glass.</li>
+             <li class="uses_list">Potassium hydroxide is used to make detergent and liquid soap.</li>
+             <li class="uses_list">Potassium chloride is used in pharmaceuticals and saline drips.</li>
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="18argon.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="20calcium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

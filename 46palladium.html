@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Palladium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>PALLADIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Palladium is a chemical element with the symbol Pd and atomic number 46. It is a rare and lustrous silvery-white metal discovered in 1803 by the English chemist William Hyde Wollaston. He named it after the asteroid Pallas, which was itself named after the epithet of the Greek goddess Athena, acquired by her when she slew Pallas. Palladium, platinum, rhodium, ruthenium, iridium and osmium form a group of elements referred to as the platinum group metals (PGMs). They have similar chemical properties, but palladium has the lowest melting point and is the least dense of them.
+
+      More than half the supply of palladium and its congener platinum is used in catalytic converters, which convert as much as 90% of the harmful gases in automobile exhaust (hydrocarbons, carbon monoxide, and nitrogen dioxide) into less noxious substances (nitrogen, carbon dioxide and water vapor). <a href="https://en.wikipedia.org/wiki/Palladium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solid </li>
+            <li class="phy_list">Melting point -1828.05 K ​(1554.9 °C, ​2830.82 °F)</li>
+            <li class="phy_list">Boiling point  -3236 K ​(2963 °C, ​5365 °F)</li>
+            <li class="phy_list">Density (at STP) - 12.023 g/cm3 </li>
+         
+            <li class="phy_list">Heat of fusion  - 16.74 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization  - 358 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity  - 25.98 J/(mol·K)</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 2.20 </li>
+            <li class="che_list">atomic radius -137 pm</li>
+            <li class="che_list">Covalent radius -139±6 pm</li>
+            <li class="che_list">Electronic shell -[Kr] 4d10</li>
+            <li class="che_list">Energy of first ionisation-804.4 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF PALLADIUM</h3>
+         <ul class="list">
+            <li class="uses_list">The largest use of palladium today is in catalytic converters.</li>
+            <li class="uses_list"> Palladium is also used in jewelry, dentistry,watch making, blood sugar test strips, aircraft spark plugs, surgical instruments, and electrical contacts.</li>
+            <li class="uses_list">The second greatest application of palladium in electronics is in multi-layer ceramic capacitors </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="45rhodium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="47silver.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

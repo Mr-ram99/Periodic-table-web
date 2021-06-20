@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tungsten</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>TUNGSTEN</h2>
+ 
+ 
+       <div id="intro">
+        Tungsten, or wolfram,is a chemical element with the symbol W and atomic number 74. Tungsten is 
+        a rare metal found naturally on Earth almost exclusively combined with other elements in chemical compounds.
+        It was identified as a new element in 1781 and first isolated as a metal in 1783. Its important ores include
+        scheelite, and wolframite, lending the element its alternate name.<a href="https://en.wikipedia.org/wiki/tungsten">More...</a>
+
+       </div>
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	3695 K ​(3422 °C, ​6192 °F)</li>
+            <li class="phy_list"> Boiling point	6203 K ​(5930 °C, ​10706 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	19.3 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	17.6 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	52.31 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	774 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	24.27 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 74</li>
+            <li class="che_list"> Atomic mass 183.85 g.mol -1</li>
+            <li class="che_list"> Electronegativity accoridin to Pauling 1.7</li>
+            <li class="che_list"> Density 19.3 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 3410 °C</li>
+            <li class="che_list"> Boiling point 5660 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.137 nm</li>
+            <li class="che_list"> Ionic radius 0.068 nm (+4) ; 0.067 nm (+6)</li>
+            <li class="che_list"> Isotopes 10</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d4 6s2</li>
+            <li class="che_list"> Energy of first ionisation 768.6 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 0.05 V ( W+4/ W )</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF TUNGSTEN</h3>
+          <ul class="list">
+             <li class="uses_list">Tungsten was used extensively for the filaments of old-style incandescent light bulbs.</li>
+             <li class="uses_list">Tungsten alloys are used in arc-welding electrodes and many high temeperature applications.</li>
+             <li class="uses_list">Tungsten carbides are used in makin drilling and cutting tools.</li>
+             <li class="uses_list">It is also used in manufacturing of many hard metals.</li>
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="73tantalum.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="75rhenium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

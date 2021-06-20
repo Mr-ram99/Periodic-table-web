@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lanthanum</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>LANTHANUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Lanthanum is a chemical element with the symbol La and atomic number 57. It is a soft, ductile, silvery-white metal that tarnishes slowly when exposed to air and is soft enough to be cut with a knife. It is the eponym of the lanthanide series, a group of 15 similar elements between lanthanum and lutetium in the periodic table, of which lanthanum is the first and the prototype. It is also sometimes considered the first element of the 6th-period transition metals, which would put it in group 3,[5] although lutetium is sometimes placed in this position instead.[6] Lanthanum is traditionally counted among the rare earth elements. The usual oxidation state is +3. Lanthanum has no biological role in humans but is essential to some bacteria. It is not particularly toxic to humans but does show some antimicrobial activity. <a href="https://en.wikipedia.org/wiki/Lanthanum">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - Solid</li>
+            <li class="phy_list">Melting point - 1193 K ​(920 °C, ​1688 °F)
+            </li>
+            <li class="phy_list">Boiling point  - 3737 K ​(3464 °C, ​6267 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 6.162 g/cm3
+            </li>
+            
+            <li class="phy_list">Heat of fusion  - 6.20 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - 400 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 27.11 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling - 1.10</li>
+            <li class="che_list">Covalent radius - 	207±8 pm</li>
+            <li class="che_list">Atomic radius -187 pm</li>
+            <li class="che_list">Isotopes - </li>
+            <li class="che_list">Electronic shell - [Xe] 5d1 6s2
+            </li>
+            <li class="che_list">Energy of first ionisation- 538.1 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF LANTHANUM</h3>
+         <ul class="list">
+            <li class="uses_list">The first historical application of lanthanum was in gas lantern mantles.</li>
+            <li class="uses_list">Mischmetal, a pyrophoric alloy used in lighter flints, contains 25% to 45% lanthanum.</li>
+            <li class="uses_list">Lanthanum trifluoride (LaF
+               3) is an essential component of a heavy fluoride glass named ZBLAN.  </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="56barium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="58cerium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sodium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>SODIUM</h2>
+ 
+       <div id="intro">
+        Sodium is a chemical element with the symbol Na (from Latin "natrium") and atomic number 11. 
+        It is a soft, silvery-white, highly reactive metal. Sodium is an alkali metal, being in group 1 of the 
+        periodic table. Its only stable isotope is 23Na. The free metal does not occur in nature, and must be 
+        prepared from compounds. Sodium is the sixth most abundant element in the Earth's crust and exists in numerous
+        minerals such as feldspars, sodalite, and rock salt (NaCl). Many salts of sodium are highly water-soluble: 
+        sodium ions have been leached by the action of water from the Earth's minerals over eons, and thus sodium and 
+        chlorine are the most common dissolved elements by weight in the oceans.
+        <a href="https://en.wikipedia.org/wiki/Sodium">More...</a>
+       </div>
+ 
+
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	370.944 K ​(97.794 °C, ​208.029 °F)</li>
+            <li class="phy_list"> Boiling point	1156.090 K ​(882.940 °C, ​1621.292 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	0.968 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	0.927 g/cm3</li>
+            <li class="phy_list"> Critical point	2573 K, 35 MPa (extrapolated)</li>
+            <li class="phy_list"> Heat of fusion	2.60 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	97.42 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	28.230 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 11</li>
+            <li class="che_list"> Atomic mass 22.98977 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 0.9</li>
+            <li class="che_list"> Density 0.97 g.cm -3 at 20 °C</li>
+            <li class="che_list"> Melting point 97.5 °C</li>
+            <li class="che_list"> Boiling point 883 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.196 nm</li>
+            <li class="che_list"> Ionic radius 0.095 (+1) nm</li>
+            <li class="che_list"> Isotopes 3</li>
+            <li class="che_list"> Electronic shell [Ne] 3s1</li>
+            <li class="che_list"> Energy of first ionisation 495.7 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 2.71 V</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF SODIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Sodium is used as a heat exchanger in some nuclear reactors.</li>
+             <li class="uses_list">sodium is used as a reagent in the chemicals industry</li>
+             <li class="uses_list">Washing soda is used as a water softener.</li>
+             <li class="uses_list">Sodium chloride is added to food and used to de-ice roads in winter</li>
+             <li class="uses_list">It is also used as a feedstock for the chemical industry</li>
+          </ul>
+ 
+ 
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="10neon.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="12magnesium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

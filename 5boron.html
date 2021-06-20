@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boron</title>
+    <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>BORON</h2>
+ 
+       <div id="intro">
+        Boron is a non metallic element and the only non-metal of the group 13 of the periodic table the elements.
+        Boron is electron-deficient, possessing a vacant p-orbital. It has several forms, the most common of which is 
+        amorphous boron, a dark powder, unreactive to oxygen, water, acids and alkalis. It reacts with metals to form
+        borides.At standard temperatures boron is a poor electrical conductor but is a good conductor at high temperatures.
+        <a href="https://en.wikipedia.org/wiki/Boron">More...</a></div>
+ 
+ 
+ 
+      
+  <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+             <li class="phy_list"> Phase at STP	solid</li>
+             <li class="phy_list"> Melting point	2349 K ​(2076 °C, ​3769 °F)</li>
+             <li class="phy_list"> Boiling point	4200 K ​(3927 °C, ​7101 °F)</li>
+             <li class="phy_list"> Density when liquid (at m.p.)	2.08 g/cm3</li>
+             <li class="phy_list"> Heat of fusion	50.2 kJ/mol</li>
+             <li class="phy_list"> Heat of vaporization	508 kJ/mol</li>
+             <li class="phy_list"> Molar heat capacity	11.087 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 5</li>
+            <li class="che_list"> Atomic mass 10.81 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 2.0</li>
+            <li class="che_list"> Density 2.3 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 2076 °C</li>
+            <li class="che_list"> Boiling point 3927 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.098 nm</li>
+            <li class="che_list"> Ionic radius 0.027 nm</li>
+            <li class="che_list"> Isotopes 2</li>
+            <li class="che_list"> Electronic shell [ He ] 2s2 2p1</li>
+            <li class="che_list"> Energy of first ionisation 800.5 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 2426.5 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation 3658.7 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF BORON</h3>
+          <ul class="list">
+             <li class="uses_list">Boron is used as rocket fuels</li>
+             <li class="uses_list">Boron is used as food preserative</li>
+             <li class="uses_list">It is used to make brosilicate glass</li>
+             <li class="uses_list"> Its isotope is used in nuclear reactors</li>
+          </ul>
+ 
+ 
+       </div>
+    </section>
+    <section id="prev_next">
+      <div id="prev">
+         <a href="4beryllium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="6carbon.html">Next</a>
+      </div>
+   </section>
+    <hr><footer>
+       <div id="copyright">
+          2021 © Chem4fun.tech | All right reserved.
+       </div>
+    </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

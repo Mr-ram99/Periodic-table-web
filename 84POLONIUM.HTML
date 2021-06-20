@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Polonium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>POLONIUM</h2>
+
+      <div id="intro">
+         Polonium is a chemical element with the symbol Po and atomic number 84. A rare and highly radioactive metal with no stable isotopes, polonium is chemically similar to selenium and tellurium, though its metallic character resembles that of its horizontal neighbors in the periodic table: thallium, lead, and bismuth. Due to the short half-life of all its isotopes, its natural occurrence is limited to tiny traces of the fleeting polonium-210 (with a half-life of 138 days) in uranium ores, as it is the penultimate daughter of natural uranium-238. Though slightly longer-lived isotopes exist, they are much more difficult to produce. 
+         Today, polonium is usually produced in milligram quantities by the neutron irradiation of bismuth. Due to its intense radioactivity, which results in the radiolysis of chemical bonds and radioactive self-heating, its chemistry has mostly been investigated on the trace scale only. <a href="https://en.wikipedia.org/wiki/polonium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 527 K ​(254 °C, ​489 °F)</li>
+            <li class="phy_list">Boiling point - 1235 K ​(962 °C, ​1764 °F)</li>
+            <li class="phy_list">Density (at liquid) - alpha: 9.196 g/cm3 , beta: 9.398 g/cm3</li>
+            <li class="phy_list">Heat of fusion - ca. 13 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 102.91 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 26.4 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - cubic(alpha)</li>
+            <li class="che_list">Thermal expansion - 23.5 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 20 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- α: 0.40 nΩ·m (at 20 °C)</li>
+            <li class="che_list">CAS Number - 7440-08-6</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF POLONIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Polonium-based sources of alpha particles were produced in the former Soviet Union.Such sources were applied for measuring the thickness of industrial coatings via attenuation of alpha radiation.</li>
+            <li class="uses_list">Po-BeO mixtures or alloys are used as a neutron source, for example, in a neutron trigger or initiator for nuclear weapons and for inspections of oil wells.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="83BISMUTH.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="85ASTATINE.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

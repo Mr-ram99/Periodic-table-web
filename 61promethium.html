@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promethium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>PROMETHIUM</h2>
+ 
+ 
+ 
+       <div id="intro">
+         Promethium is a chemical element with the symbol Pm and atomic number 61. All of its isotopes are radioactive;
+         it is extremely rare, with only about 500–600 grams naturally occurring in Earth's crust at any given time. 
+         Promethium is one of only two radioactive elements that are followed in the periodic table by elements with stable
+         forms, the other being technetium. Chemically, promethium is a lanthanide. Promethium shows only one stable oxidation
+         state of +3.
+         Promethium was first produced and characterized at Oak Ridge National Laboratory in 1945 by the separation 
+         and analysis of the fission products of uranium fuel irradiated in a graphite reactor.<a href="https://en.wikipedia.org/wiki/promethium">More...</a>
+       </div>
+ 
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1315 K ​(1042 °C, ​1908 °F)</li>
+            <li class="phy_list"> Boiling point	3273 K ​(3000 °C, ​5432 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	7.26 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	7.13 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	289 kJ/mol</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 61</li>
+            <li class="che_list"> Atomic mass (147) g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling unknown</li>
+            <li class="che_list"> Density 6.475 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 1168 °C</li>
+            <li class="che_list"> Boiling point 2460 °C</li>
+            <li class="che_list"> Vanderwaals radius unknown</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 9</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f5 6s2</li>
+            <li class="che_list"> Energy of first ionisation 534.6 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1050 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 2.42 V</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF PROMETHIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Promethium can also be used as a source of x-rays and radioactivity in measuring instruments.</li>
+             <li class="uses_list">Most promethium is used only in research.</li>
+             <li class="uses_list">A little promethium is used in specialised atomic batteries.</li>
+             <li class="uses_list">They are also used for pacemakers and radios due to their small size</li>
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="60neodymium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="62samarium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

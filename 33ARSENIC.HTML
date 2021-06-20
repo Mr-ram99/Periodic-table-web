@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ARSENIC</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>ARSENIC</h2>
+      <div id="intro">
+         Arsenic is a chemical element with the symbol As and atomic number 33. Arsenic occurs in many minerals, usually in combination with sulfur and metals, but also as a pure elemental crystal. Arsenic is a metalloid. It has various allotropes, but only the gray form, which has a metallic appearance, is important to industry.
+         A few species of bacteria are able to use arsenic compounds as respiratory metabolites. Trace quantities of arsenic are an essential dietary element in rats, hamsters, goats, chickens, and presumably other species. A role in human metabolism is not known. However, arsenic poisoning occurs in multicellular life if quantities are larger than needed. Arsenic contamination of groundwater is a problem that affects millions of people across the world.<a href="https://en.wikipedia.org/wiki/arsenic">More...</a>
+      </div>
+
+   </section>
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 887 K ​(615 °C, ​1137 °F)</li>
+            <li class="phy_list">Heat of fusion	grey - 24.44 kJ/mol</li>
+            <li class="phy_list">Density (at liquid) - 5.22 g/cm3</li>
+            <li class="phy_list">Triple point - 1090 K, ​3628 kPa</li>
+            <li class="phy_list">Critical point - 1673 K</li>
+            <li class="phy_list">Molar heat capacity - 24.64 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​​rhombohedral</li>
+            <li class="che_list">Thermal expansion - 5.6 µm/(m·K) (at r.t.)</li>
+            <li class="che_list">Thermal conductivity - 50.2 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 333 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 8 GPa</li>
+            <li class="che_list">Bulk modulus - 22 GPa</li>
+            <li class="che_list">CAS Number - 	7440-38-2</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF ARSENIC</h3>
+         <ul class="list">
+            <li class="uses_list">The toxicity of arsenic to insects, bacteria, and fungi led to its use as a wood preservative.</li>
+            <li class="uses_list">Arsenic was also used in various agricultural insecticides and poisons.</li>
+            <li class="uses_list">Arsenic is used as a feed additive in poultry and swine production, in particular in the U.S. to increase weight gain, improve feed efficiency, and prevent disease.</li>
+            <li class="uses_list">The primary use of arsenic is in alloys of lead (for example, in car batteries and ammunition).</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="32GERMANIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="34SELENIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

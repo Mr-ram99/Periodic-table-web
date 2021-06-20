@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>PLATINUM</h2>
+ 
+ 
+       <div id="intro">
+        Platinum is a chemical element with the symbol Pt and atomic number 78. It is a dense, malleable, ductile, 
+        highly unreactive, precious, silverish-white transition metal. Its name is derived from the Spanish term 
+        platino, meaning "little silver".<br>
+
+        Platinum is a member of the platinum group of elements and group 10 of the periodic table of elements. 
+        It has six naturally occurring isotopes. It is one of the rarer elements in Earth's crust, with an average 
+        abundance of approximately 5 μg/kg. It occurs in some nickel and copper ores along with some native deposits,
+        mostly in South Africa, which accounts for 80% of the world production. Because of its scarcity in Earth's 
+        crust, only a few hundred tonnes are produced annually, and given its important uses, it is highly valuable 
+        and is a major precious metal commodity.<a href="https://en.wikipedia.org/wiki/platinum">More...</a>
+       </div>
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	2041.4 K ​(1768.3 °C, ​3214.9 °F)</li>
+            <li class="phy_list"> Boiling point	4098 K ​(3825 °C, ​6917 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	21.45 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	19.77 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	22.17 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	510 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	25.86 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 78</li>
+            <li class="che_list"> Atomic mass 195.09 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 2.2</li>
+            <li class="che_list"> Density 21.4 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 1772 °C</li>
+            <li class="che_list"> Boiling point 3800 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.138 nm</li>
+            <li class="che_list"> Ionic radius 0.096 nm (+2)</li>
+            <li class="che_list"> Isotopes 13</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d9 6s1</li>
+            <li class="che_list"> Energy of first ionisation 867 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1788 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF PLATINUM</h3>
+          <ul class="list">
+             <li class="uses_list">Platinum is used extensively for jewellery.</li>
+             <li class="uses_list">Its main use,is in catalytic converters for cars, trucks and buses.</li>
+             <li class="uses_list">Platinum is also used to make optical fibres and LCDs.</li>
+             <li class="uses_list">Platinum compounds are important chemotherapy drugs used to treat cancers.</li>
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="77iridium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="79gold.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

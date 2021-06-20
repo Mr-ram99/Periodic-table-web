@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holmium</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>HOLMIUM</h2>
+ 
+ 
+       <div id="intro">
+        Holmium is a chemical element with the symbol Ho and atomic number 67. Part of the lanthanide series, holmium
+        is a rare-earth element.
+        Holmium was discovered through isolation by Swedish chemist Per Theodor Cleve and independently by Jacques-Louis
+        Soret and Marc Delafontaine who observed it spectroscopically in 1878. Its oxide was first isolated from rare-earth
+        ores by Cleve in 1878. The element's name comes from Holmia, the Latin name for the city of Stockholm.
+        Elemental holmium is a relatively soft and malleable silvery-white metal. It is too reactive to be found 
+        uncombined in nature, but when isolated, is relatively stable in dry air at room temperature. However, 
+        it reacts with water and corrodes readily and also burns in air when heated.<a href="https://en.wikipedia.org/wiki/holmium">More...</a>
+       </div>
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	1734 K ​(1461 °C, ​2662 °F)</li>
+            <li class="phy_list"> Boiling point	2873 K ​(2600 °C, ​4712 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	8.79 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	8.34 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	17.0 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	251 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	27.15 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 67</li>
+            <li class="che_list"> Atomic mass 164.9 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.2</li>
+            <li class="che_list"> Density 8.8 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 1474 °C</li>
+            <li class="che_list"> Boiling point 2695 °C</li>
+            <li class="che_list"> Vanderwaals radius unknown</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 4</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f11 6s2</li>
+            <li class="che_list"> Energy of first ionisation 580 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation 1136.6 kJ.mol -1</li>
+            <li class="che_list"> Standard potential - 2.32 V</li>
+
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF HOLMIUM</h3>
+          <ul class="list">
+             <li class="uses_list">Holmium can absorb neutrons, so it is used in nuclear reactors to keep a chain reaction under control</li>
+             <li class="uses_list">Its alloys are used in some magnets.</li>
+             <li class="uses_list">They are used in medical, dental, and fiber-optical applications.</li>
+
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="66dysprosium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="68erbium.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

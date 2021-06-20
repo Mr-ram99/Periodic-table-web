@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Technetium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>TECHNETIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+    Technetium is a chemical element with the symbol Tc and atomic number 43. It is the lightest element whose isotopes are all radioactive, none of which are stable other than the fully ionized state of 97Tc.[4] Nearly all available technetium is produced as a synthetic element. Naturally occurring technetium is a spontaneous fission product in uranium ore and thorium ore, the most common source, or the product of neutron capture in molybdenum ores. The silvery gray, crystalline transition metal lies between manganese and rhenium in group 7 of the periodic table, and its chemical properties are intermediate between those of both adjacent elements. The most common naturally occurring isotope is 99Tc, in traces only.<a href="https://en.wikipedia.org/wiki/technetium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solid </li>
+            <li class="phy_list">Melting point -	2430 K ​(2157 °C, ​3915 °F)</li>
+            <li class="phy_list">Boiling point  -4538 K ​(4265 °C, ​7709 °F)</li>
+            <li class="phy_list">Density (at STP) -  11 g/cm3</li>
+
+            <li class="phy_list">Heat of fusion  - 33.29 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization  - 585.2 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity  -24.27 J/(mol·K) </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 1.9 </li>
+            <li class="che_list">atomic radius -136 pm</li>
+            <li class="che_list">covalent radius - 47±7 pm</li>
+            <li class="che_list">Isotopes - many</li>
+            <li class="che_list">Electronic shell -[Kr] 4d5 5s2 </li>
+            <li class="che_list">Energy of first ionisation-  702 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF TECHNETIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Technetium-99m is a radioactive tracer that medical imaging equipment tracks in the human body.</li>
+            <li class="uses_list">Industrial and chemical.</li>
+            <li class="uses_list"> The chemistry of technetium allows it to be bound to a variety of biochemical compounds, each of which determines how it is metabolized and deposited in the body.</li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="42molybdenum.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="44ruthenium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

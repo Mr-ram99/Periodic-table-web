@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>YTTRIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>YTTRIUM</h2>
+
+      <div id="intro">
+         Yttrium is a chemical element with the symbol Y and atomic number 39. It is a silvery-metallic transition metal chemically similar to the lanthanides and has often been classified as a "rare-earth element". Yttrium is almost always found in combination with lanthanide elements in rare-earth minerals, and is never found in nature as a free element. 89Y is the only stable isotope, and the only isotope found in the Earth's crust.
+         The most important uses of yttrium are LEDs and phosphors, particularly the red phosphors in television set cathode ray tube displays. Yttrium is also used in the production of electrodes, electrolytes, electronic filters, lasers, superconductors, various medical applications, and tracing various materials to enhance their properties.<a href="https://en.wikipedia.org/wiki/yttrium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1799 K ​(1526 °C, ​2779 °F)</li>
+            <li class="phy_list">Boiling point - 3203 K ​(2930 °C, ​5306 °F)</li>
+            <li class="phy_list">Density (at liquid) - 4.24 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 11.42 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 363 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 26.53 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​hexagonal close-packed (hcp)</li>
+            <li class="che_list">Thermal expansion - α, poly: 10.6 µm/(m·K) (at r.t.)</li>
+            <li class="che_list">Thermal conductivity - 17.2 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- α, poly: 596 nΩ·m (at r.t.)</li>
+            <li class="che_list">Young's modulus - 63.5 GPa</li>
+            <li class="che_list">Bulk modulus - 41.2 GPa</li>
+            <li class="che_list">CAS Number - 	7440-65-5</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF YTTRIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Yttria is used as a sintering additive in the production of porous silicon nitride.</li>
+            <li class="uses_list">Yttrium compounds are used as a catalyst for ethylene polymerization.</li>
+            <li class="uses_list">As a metal, yttrium is used on the electrodes of some high-performance spark plugs.</li>
+            <li class="uses_list">Yttrium is used in gas mantles for propane lanterns as a replacement for thorium, which is radioactive.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="38STRONTIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="40ZIRCONIUM.HTML">Next</a>
+      </div>
+   </section>
+  
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

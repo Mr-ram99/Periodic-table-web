@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Protactinium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>PROTACTINIUM</h2>
+
+      <div id="intro">
+         Protactinium (formerly protoactinium) is a chemical element with the symbol Pa and atomic number 91. It is a dense, silvery-gray actinide metal which readily reacts with oxygen, water vapor and inorganic acids. It forms various chemical compounds in which protactinium is usually present in the oxidation state +5, but it can also assume +4 and even +3 or +2 states. Concentrations of protactinium in the Earth's crust are typically a few parts per trillion, but may reach up to a few parts per million in some uraninite ore deposits. Because of its scarcity, high radioactivity and high toxicity, there are currently no uses for protactinium outside scientific research, and for this purpose, protactinium is mostly extracted from spent nuclear fuel.<a href="https://en.wikipedia.org/wiki/protactinium">More...</a> 
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1841 K ​(1568 °C, ​2854 °F)</li>
+            <li class="phy_list">Boiling point - 4300 K ​(4027 °C, ​7280 °F)</li>
+            <li class="phy_list">Density - 15.37 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 12.34 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 481 kJ/mol</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - body-centered tetragonal</li>
+            <li class="che_list">Thermal expansion - 9.9 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 47 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 117 nΩ·m (at 20 °C)</li>
+            <li class="che_list">CAS Number - 	7440-13-3</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF PROTACTINIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Although protactinium is located in the periodic table between uranium and thorium, which both have numerous applications, there are currently no uses for protactinium outside scientific research owing to its scarcity, high radioactivity, and high toxicity.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="90THORIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="92URANIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

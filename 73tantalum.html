@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantalum</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>TANTALUM</h2>
+ 
+ 
+       <div id="intro">
+        Tantalum is a chemical element with the symbol Ta and atomic number 73. Previously known as tantalium, it 
+        is named after Tantalus, a villain from Greek mythology.Tantalum is a rare, hard, blue-gray, lustrous 
+        transition metal that is highly corrosion-resistant. It is part of the refractory metals group, which are 
+        widely used as minor components in alloys. The chemical inertness of tantalum makes it a valuable substance 
+        for laboratory equipment, and as a substitute for platinum. Its main use today is in tantalum capacitors in 
+        electronic equipment such as mobile phones, DVD players, video game systems and computers.<a href="https://en.wikipedia.org/wiki/tantalum">More...</a>
+       </div>
+ 
+ 
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Solid</li>
+            <li class="phy_list"> Melting point	3290 K ​(3017 °C, ​5463 °F)</li>
+            <li class="phy_list"> Boiling point	5731 K ​(5458 °C, ​9856 °F)</li>
+            <li class="phy_list"> Density (near r.t.)	16.69 g/cm3</li>
+            <li class="phy_list"> when liquid (at m.p.)	15 g/cm3</li>
+            <li class="phy_list"> Heat of fusion	36.57 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	753 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	25.36 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 73</li>
+            <li class="che_list"> Atomic mass 180.95 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling 1.5</li>
+            <li class="che_list"> Density 16.69 g.cm-3 at 20°C</li>
+            <li class="che_list"> Melting point 2850 °C</li>
+            <li class="che_list"> Boiling point 6000 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.1425 nm</li>
+            <li class="che_list"> Ionic radius 0.070 nm (+5)</li>
+            <li class="che_list"> Isotopes 4</li>
+            <li class="che_list"> Electronic shell [ Xe ] 4f14 5d3 6s2</li>
+            <li class="che_list"> Energy of first ionisation 674.2 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF TANTALUM</h3>
+          <ul class="list">
+             <li class="uses_list">One of the main uses of tantalum is in the production of electronic components.</li>
+             <li class="uses_list">Tantalum is widely used in making surgical instruments and implants.</li>
+             <li class="uses_list">Tantalum was extensively used in the production of ultra high frequency electron tubes for radio transmitters.</li>
+
+       </div>
+    </section>
+   </div>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="72hafnium.html" >Prev</a>
+   </div>
+   <div id="next">
+      <a href="74tungsten.html" >Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

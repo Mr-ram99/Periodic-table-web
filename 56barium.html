@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Barium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>BARIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Barium is a chemical element with the symbol Ba and atomic number 56. It is the fifth element in group 2 and is a soft, silvery alkaline earth metal. Because of its high chemical reactivity, barium is never found in nature as a free element.
+
+      The most common minerals of barium are baryte (barium sulfate, BaSO4) and witherite (barium carbonate, BaCO3), both insoluble in water. The name barium originates from the alchemical derivative "baryta", from Greek βαρύς (barys), meaning "heavy". Baric is the adjectival form of barium. Barium was identified as a new element in 1774, but not reduced to a metal until 1808 with the advent of electrolysis.
+      
+      Barium has few industrial applications. Historically, it was used as a getter for vacuum tubes and in oxide form as the emissive coating on indirectly heated cathodes. It is a component of YBCO (high-temperature superconductors) and electroceramics, and is added to steel and cast iron to reduce the size of carbon grains within the microstructure. Barium compounds are added to fireworks to impart a green color. Barium sulfate is used as an insoluble additive to oil well drilling fluid, as well as in a purer form, as X-ray radiocontrast agents for imaging the human gastrointestinal tract. Water-soluble barium compounds are poisonous and have been used as rodenticides.
+      <a href="https://en.wikipedia.org/wiki/Barium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solod </li>
+            <li class="phy_list">Melting point -1000 K ​(727 °C, ​1341 °F)
+            </li>
+            <li class="phy_list">Boiling point  -2118 K ​(1845 °C, ​3353 °F)
+            </li>
+            <li class="phy_list">Density (at STP) - 3.51 g/cm3
+            </li>
+            
+         
+            <li class="phy_list">Heat of fusion  - 7.12 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  -142 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - 28.07 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling- 0.89 </li>
+            <li class="che_list">Vanderwaals radius - 268 pm
+            </li>
+            <li class="che_list">Atomic radius -222 pm</li>
+            <li class="che_list">Electronic shell -[Xe] 6s2
+            </li>
+            <li class="che_list">Energy of first ionisation-502.9 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF BARIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Barium, as a metal or when alloyed with aluminium, is used to remove unwanted gases (gettering) from vacuum tubes, such as TV picture tubes.</li>
+            <li class="uses_list">lead–tin soldering alloys – to increase the creep resistance</li>
+            <li class="uses_list">Barium sulfate (the mineral baryte, BaSO4) is important to the petroleum industry as a drilling fluid in oil and gas wells. </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="55caesium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="57lanthanum.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

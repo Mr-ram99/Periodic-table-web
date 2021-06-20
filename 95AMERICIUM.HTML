@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Americium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>AMERICIUM</h2>
+
+      <div id="intro">
+         Americium is a synthetic radioactive chemical element with the symbol Am and atomic number 95. It is a transuranic member of the actinide series, in the periodic table located under the lanthanide element europium, and thus by analogy was named after the Americas.<a href="https://en.wikipedia.org/wiki/americium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1449 K ​(1176 °C, ​2149 °F)</li>
+            <li class="phy_list">Boiling point - 2880 K ​(2607 °C, ​4725 °F)</li>
+            <li class="phy_list">Density - 12 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 14.39 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 28 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​double hexagonal close-packed (dhcp)</li>
+            <li class="che_list">Magnetic ordering	- paramagnetic</li>
+            <li class="che_list">Thermal conductivity - 10 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 0.69 nΩ·m (at 20 °C)</li>
+            <li class="che_list">CAS Number - 	7440-35-9</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF AMERICIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Americium is used in the most common type of household smoke detector, which uses 241Am in the form of americium dioxide as its source of ionizing radiation.</li>
+            <li class="uses_list">Americium is a starting material for the production of other transuranic elements and transactinides.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="94PLUTONIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="96CURIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Niobium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+   
+
+   <div>
+      <h2>NIOBIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+    Niobium, also known as columbium, is a chemical element with the symbol Nb (formerly Cb) and atomic number 41. Niobium is a light grey, crystalline, and ductile transition metal. Pure niobium has a Mohs hardness rating similar to that of pure titanium,[2] and it has similar ductility to iron. Niobium oxidizes in the earth's atmosphere very slowly, hence its application in jewelry as a hypoallergenic alternative to nickel. Niobium is often found in the minerals pyrochlore and columbite, hence the former name "columbium". Its name comes from Greek mythology, specifically Niobe, who was the daughter of Tantalus, the namesake of tantalum. The name reflects the great similarity between the two elements in their physical and chemical properties, making them difficult to distinguish.<a href="https://en.wikipedia.org/wiki/niobium">More...</a>
+   </div>
+
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 2750 K ​(2477 °C, ​4491 °F)</li>
+            <li class="phy_list">Boiling point  - 5017 K ​(4744 °C, ​8571 °F)</li>
+            <li class="phy_list">Density (at STP) - 8.57 g/cm3 </li>
+            <li class="phy_list">Heat of fusion  - 30 kj/mol</li>
+            <li class="phy_list">Heat of vaporization  - 689.9 kj/mol</li>
+            <li class="phy_list">Molar heat capacity  - 24.60 J/mol.k</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling -1.6</li>
+            <li class="che_list">Vanderwaals radius -164 pm</li>
+            <li class="che_list">Ionic radius -146 pm</li>
+            <li class="che_list">Isotopes - 11 </li>
+            <li class="che_list">Electronic shell -[kr]4d<sup>4</sup>5s<sup>1</sup></li>
+            <li class="che_list">Energy of first ionisation- 652.1 KJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF NIOBIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Steel production</li>
+            <li class="uses_list">Making of superalloys</li>
+            <li class="uses_list">Niobium based alloys</li>
+            <li class="uses_list">Superconducting magnets </li>
+            <li class="uses_list"> Electroceramics</li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="40zirconium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="42molybdenum.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

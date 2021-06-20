@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>argon</title><link rel="stylesheet" href="Elementpagecss.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+ 
+    <h2>ARGON</h2>
+ 
+ 
+       <div id="intro">
+        Argon is a chemical element with the symbol Ar and atomic number 18. It is in group 18 of the periodic table
+        and is a noble gas.Argon is the third-most abundant gas in the Earth's atmosphere, at 0.934% (9340 ppmv). 
+        It is more than twice as abundant as water vapor (which averages about 4000 ppmv, but varies greatly), 
+        23 times as abundant as carbon dioxide (400 ppmv), and more than 500 times as abundant as neon (18 ppmv).
+        Argon is the most abundant noble gas in Earth's crust, comprising 0.00015% of the crust.<br>
+        Nearly all of the argon in the Earth's atmosphere is radiogenic argon-40, derived from the decay of 
+        potassium-40 in the Earth's crust. In the universe, argon-36 is by far the most common argon isotope, as it
+        is the most easily produced by stellar nucleosynthesis in supernovas.<a href="https://en.wikipedia.org/wiki/argon">More...</a>
+       </div>
+ 
+ 
+ 
+ 
+    </section>
+    <section>
+ 
+       <div class="item">
+          <h3>PHYSICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="phy_list"> Phase at STP	Gas</li>
+            <li class="phy_list"> Melting point	83.81 K ​(−189.34 °C, ​−308.81 °F)</li>
+            <li class="phy_list"> Boiling point	87.302 K ​(−185.848 °C, ​−302.526 °F)</li>
+            <li class="phy_list"> Density (at STP)	1.784 g/L<br>
+                                  when liquid (at b.p.)	1.3954 g/cm3</li>
+            <li class="phy_list"> Triple point	83.8058 K, ​68.89 kPa</li>
+            <li class="phy_list"> Critical point	150.687 K, 4.863 MPa</li>
+            <li class="phy_list"> Heat of fusion	1.18 kJ/mol</li>
+            <li class="phy_list"> Heat of vaporization	6.53 kJ/mol</li>
+            <li class="phy_list"> Molar heat capacity	20.85 J/(mol·K)</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>CHEMICAL PROPERITIES</h3>
+          <ul class="list">
+            <li class="che_list"> Atomic number 18</li>
+            <li class="che_list"> Atomic mass 39.948 g.mol -1</li>
+            <li class="che_list"> Electronegativity according to Pauling unknown</li>
+            <li class="che_list"> Density 1.78.10 -3 g.cm -3 at 0 °C</li>
+            <li class="che_list"> Melting point -189 °C</li>
+            <li class="che_list"> Boiling point -185.7 °C</li>
+            <li class="che_list"> Vanderwaals radius 0.192 nm</li>
+            <li class="che_list"> Ionic radius unknown</li>
+            <li class="che_list"> Isotopes 6</li>
+            <li class="che_list"> Electronis shell [Ne] 3s23p6</li>
+            <li class="che_list"> Energy of first ionisation 1520 kJ.mol -1</li>
+            <li class="che_list"> Energy of second ionisation	2665.8 kJ.mol -1</li>
+            <li class="che_list"> Energy of third ionisation	3931 kJ.mol -1</li>
+          </ul>
+       </div>
+ 
+       <div class="item">
+          <h3>GENERAL USES OF ARGON</h3>
+          <ul class="list">
+             <li class="uses_list">Argon is often used when an inert atmosphere is needed.</li>
+             <li class="uses_list">Argon is used in fluorescent tubes and low-energy light bulbs.</li>
+             <li class="uses_list">Double-glazed windows use argon to fill the space between the panes.</li>
+             <li class="uses_list">The tyres of luxury cars can contain argon to protect the rubber and reduce road noise.</li>
+
+       </div>
+    </section>
+    <section id="prev_next">
+      <div id="prev">
+         <a href="17chlorine.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="19potassium.html" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+ </body>
+ 
+ </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SELENIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>SELENIUM</h2>
+
+      <div id="intro">
+         Selenium is a chemical element with the symbol Se and atomic number 34. It is a nonmetal (more rarely considered a metalloid) with properties that are intermediate between the elements above and below in the periodic table, sulfur and tellurium, and also has similarities to arsenic. 
+         It rarely occurs in its elemental state or as pure ore compounds in the Earth's crust. Selenium—from Ancient Greek σελήνη (selḗnē) "Moon" – was discovered in 1817 by Jöns Jacob Berzelius, who noted the similarity of the new element to the previously discovered tellurium (named for the Earth).<a href="https://en.wikipedia.org/wiki/selenium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 494 K ​(221 °C, ​430 °F)</li>
+            <li class="phy_list">Boiling point - 958 K ​(685 °C, ​1265 °F)</li>
+            <li class="phy_list">Density (at liquid) - 3.9 g/cm3</li>
+            <li class="phy_list">Heat of fusion - gray: 6.69 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 95.48 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 25.36 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - hexagonal</li>
+            <li class="che_list">Thermal expansion - 37 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 0.51 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 197 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 10 GPa</li>
+            <li class="che_list">Bulk modulus - 8.2 GPa</li>
+            <li class="che_list">CAS Number - 	7782-49-2</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF SELENIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Application of selenium fertilizer to lettuce crops decreased the accumulation of lead and cadmium. </li>
+            <li class="uses_list">During the electrowinning of manganese, the addition of selenium dioxide decreases the power necessary to operate the electrolysis cells.</li>
+            <li class="uses_list">The largest commercial use of Se, accounting for about 50% of consumption, is for the production of glass.</li>
+         </ul>
+
+
+      </div>
+   </section>
+</section>
+<section id="prev_next">
+   <div id="prev">
+      <a href="33ARSENIC.HTML">Prev</a>
+   </div>
+   <div id="next">
+      <a href="35BROMINE.HTML">Next</a>
+   </div>
+</section>
+<hr> <footer>
+   <div id="copyright">
+      2021 © Chem4fun.tech | All right reserved.
+   </div>
+</footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

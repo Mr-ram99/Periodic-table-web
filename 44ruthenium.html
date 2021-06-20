@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ruthenium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>RUTHENIUM</h2>
+   </div>
+
+
+
+   <div id="intro">
+    Ruthenium is a chemical element with the symbol Ru and atomic number 44. It is a rare transition metal belonging to the platinum group of the periodic table. Like the other metals of the platinum group, ruthenium is inert to most other chemicals. Russian-born scientist of Baltic-German ancestry Karl Ernst Claus discovered the element in 1844 at Kazan State University and named ruthenium in honor of Russia.[a] Ruthenium is usually found as a minor component of platinum ores; the annual production has risen from about 19 tonnes in 2009 [6] to some 35.5 tonnes in 2017.[7] Most ruthenium produced is used in wear-resistant electrical contacts and thick-film resistors. A minor application for ruthenium is in platinum alloys and as a chemistry catalyst. A new application of ruthenium is as the capping layer for extreme ultraviolet photomasks. Ruthenium is generally found in ores with the other platinum group metals in the Ural Mountains and in North and South America. Small but commercially important quantities are also found in pentlandite extracted from Sudbury, Ontario and in pyroxenite deposits in South Africa.<a href="https://en.wikipedia.org/wiki/ruthenium">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - -solid</li>
+            <li class="phy_list">Melting point -	2607 K ​(2334 °C, ​4233 °F)</li>
+            <li class="phy_list">Boiling point  -4423 K ​(4150 °C, ​7502 °F)</li>
+            <li class="phy_list">Density (at STP) - 2.45 g/cm3 </li>
+            
+            
+            <li class="phy_list">Heat of fusion  - 38.59 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization  -619 kJ/mol </li>
+            <li class="phy_list">Molar heat capacity  - 24.06 J/(mol·K)</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling - 2.2</li>
+            <li class="che_list">atomic radius -134 pm</li>
+            <li class="che_list">covalent radius -146±7 pm</li>
+            <li class="che_list">Isotopes - many</li>
+            <li class="che_list">Electronic shell -[Kr] 4d7 5s1</li>
+            <li class="che_list">Energy of first ionisation- 710.2 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF RUTHENIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Approximately 30.9 tonnes of ruthenium were consumed in 2016, 13.8 of them in electrical applications, 7.7 in catalysis, and 4.6 in electrochemistry.</li>
+            <li class="uses_list">Solutions containing ruthenium trichloride are highly active for olefin metathesis. Such catalysts are used commercially for the production of polynorbornene for example.</li>
+            <li class="uses_list"> Ruthenium-promoted cobalt catalysts are used in Fischer-Tropsch synthesis.</li>
+            <li class="uses_list"> thin films in microelectronics</li>
+            
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="43technetium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="45rhodium.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tin</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <div>
+      <h2>TIN</h2>
+   </div>
+
+
+
+   <div id="intro">
+      Tin is a chemical element with the symbol Sn (from Latin: stannum) and atomic number 50. Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force.[7] When a bar of tin is bent, the so-called “tin cry” can be heard as a result of twinning in tin crystals; this trait is shared by indium, cadmium, zinc, and frozen mercury. Pure tin after solidifying keeps a mirror-like appearance similar to most metals. However, in most tin alloys (such as pewter), the metal solidifies with a dull gray color. Tin is a post-transition metal in group 14 of the periodic table of elements. It is obtained chiefly from the mineral cassiterite, which contains stannic oxide, SnO2. Tin shows a chemical similarity to both of its neighbors in group 14, germanium and lead, and has two main oxidation states, +2 and the slightly more stable +4. Tin is the 49th most abundant element on Earth and has, with 10 stable isotopes, the largest number of stable isotopes in the periodic table, thanks to its magic number of protons. It has two main allotropes: at room temperature, the stable allotrope is β-tin, a silvery-white, malleable metal, but at low temperatures, it transforms into the less dense grey α-tin, which has the diamond cubic structure. Metallic tin does not easily oxidize in air.
+      <a href="https://en.wikipedia.org/wiki/Tin">More...</a>
+   </div>
+<section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP -solid </li>
+            <li class="phy_list">Melting point -505.08 K ​(231.93 °C, ​449.47 °F)
+            </li>
+            <li class="phy_list">Boiling point  -2875 K ​(2602 °C, ​4716 °F)
+            </li>
+            <li class="phy_list">Density (at STP) -  white, β: 7.265 g/cm3
+               gray, α: 5.769 g/cm3</li>
+         
+            <li class="phy_list">Heat of fusion  - white, β: 7.03 kJ/mol
+            </li>
+            <li class="phy_list">Heat of vaporization  - white, β: 296.1 kJ/mol
+            </li>
+            <li class="phy_list">Molar heat capacity  - white, β: 27.112 J/(mol·K)
+            </li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>CHEMICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Electronegativity according to Pauling-1.96 </li>
+            <li class="che_list">Vanderwaals radius -217 pm
+            </li>
+            <li class="che_list">Atomic radius -empirical: 140 pm
+            </li>
+            <li class="che_list">Electronic shell -[Kr] 4d10 5s2 5p2
+            </li>
+            <li class="che_list">Energy of first ionisation-708.6 kJ/mol</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF TIN</h3>
+         <ul class="list">
+            <li class="uses_list">Tin has long been used in alloys with lead as solder, in amounts 5 to 70% w/w. </li>
+            <li class="uses_list">Tin bonds readily to iron and is used for coating lead, zinc and steel to prevent corrosion.</li>
+            <li class="uses_list">Specialized alloys </li>
+            <li class="uses_list">The oxides of indium and tin are electrically conductive and transparent, and are used to make transparent electrically conducting films with applications in Optoelectronics devices such as liquid crystal displays. </li>
+         </ul>
+         
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="49indium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="51antimony.html">Next</a>
+      </div>
+      
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>
