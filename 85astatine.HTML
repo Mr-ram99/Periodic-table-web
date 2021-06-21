@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Astatine</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>ASTATINE</h2>
+
+      <div id="intro">
+         Astatine is a chemical element with the symbol At and atomic number 85. It is the rarest naturally occurring element in the Earth's crust, occurring only as the decay product of various heavier elements. All of astatine's isotopes are short-lived; the most stable is astatine-210, with a half-life of 8.1 hours.
+         A sample of the pure element has never been assembled, because any macroscopic specimen would be immediately vaporized by the heat of its own radioactivity.  <a href="https://en.wikipedia.org/wiki/astatine">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - (At2) 503±3 K ​(230±3 °C, ​446±5 °F) (estimated)</li>
+            <li class="phy_list">Boiling point - (At2) 6.35±0.15 g/cm3 (predicted)</li>
+            <li class="phy_list">Heat of vaporization - (At2) 54.39 kJ/mol</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​face-centered cubic (fcc)</li>
+            <li class="che_list">Thermal conductivity - 1.8 W/(m·K)</li>
+            <li class="che_list">CAS Number - 	7440-68-8</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF ASTATINE</h3>
+         <ul class="list">
+            <li class="uses_list">Newly formed astatine-211 is the subject of ongoing research in nuclear medicine. It must be used quickly as it decays with a half-life of 7.2 hours; this is long enough to permit multistep labeling strategies.</li>
+            <li class="uses_list">Astatine-211 has potential for targeted alpha-particle therapy, since it decays either via emission of an alpha particle (to bismuth-207), or via electron capture (to an extremely short-lived nuclide, polonium-211, which undergoes further alpha decay), very quickly reaching its stable granddaughter lead-207.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="84POLONIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="86RADON.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

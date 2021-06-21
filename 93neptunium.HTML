@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Neptunium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>NEPTUNIUM</h2>
+
+      <div id="intro">
+         Neptunium is a chemical element with the symbol Np and atomic number 93. A radioactive actinide metal, neptunium is the first transuranic element. Its position in the periodic table just after uranium, named after the planet Uranus, led to it being named after Neptune, the next planet beyond Uranus. A neptunium atom has 93 protons and 93 electrons, of which seven are valence electrons. Neptunium metal is silvery and tarnishes when exposed to air. The element occurs in three allotropic forms and it normally exhibits five oxidation states, ranging from +3 to +7. It is radioactive, poisonous, pyrophoric, and capable of accumulating in bones, which makes the handling of neptunium dangerous.<a href="https://en.wikipedia.org/wiki/neptunium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 912±3 K ​(639±3 °C, ​1182±5 °F)</li>
+            <li class="phy_list">Boiling point - 4447 K ​(4174 °C, ​7545 °F) (extrapolated)</li>
+            <li class="phy_list">Density - alpha: 20.45 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 5.19 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 336 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 29.46 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - orthorhombic</li>
+            <li class="che_list">Thermal conductivity - 6.3 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 1.22 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Magnetic ordering	- paramagnetic</li>
+            <li class="che_list">CAS Number - 	7439-99-8</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF NEPTUNIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Weapons : Neptunium is fissionable, and could theoretically be used as fuel in a fast neutron reactor or a nuclear weapon, with a critical mass of around 60 kilograms.</li>
+            <li class="uses_list">237Np is used in devices for detecting high-energy (MeV) neutrons.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="92URANIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="94PLUTONIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

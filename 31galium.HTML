@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GALLIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>GALLIUM</h2>
+
+  <div id="intro">
+         Gallium is a chemical element with the symbol Ga and atomic number 31. Elemental gallium is a soft, silvery metal at standard temperature and pressure; however in its liquid state it becomes silvery white. If too much force is applied, the gallium may fracture conchoidally. It is in group 13 of the periodic table, and thus has similarities to the other metals of the group, aluminium, indium, and thallium. Gallium does not occur as a free element in nature, but as gallium (III) compounds in trace amounts in zinc ores and in bauxite.Elemental gallium is a liquid at temperatures greater than 29.76 °C (85.57 °F), and will melt in a person's hands at normal human body temperature of 37.0 °C (98.6 °F).<a href="https://en.wikipedia.org/wiki/gallium">More...</a>
+
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 302.9146 K ​(29.7646 °C, ​85.5763 °F)</li>
+            <li class="phy_list">Boiling point - 2673 K ​(2400 °C, ​4352 °F)[</li>
+            <li class="phy_list">Density (at liquid) - 6.095 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 5.59 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 256 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 25.86 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​​orthorhombic</li>
+            <li class="che_list">Thermal expansion - 18 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 40.6 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 270 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 9.8 GPa</li>
+            <li class="che_list">CAS Number - 7440-55-3</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF GALLIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Gallium is predominantly used in electronics. </li>
+            <li class="uses_list">Gallium arsenide, the primary chemical compound of gallium in electronics, is used in microwave circuits, high-speed switching circuits, and infrared circuits.</li>
+            <li class="uses_list">Semiconducting gallium nitride and indium gallium nitride produce blue and violet light-emitting diodes (LEDs) and diode lasers.</li>
+            <li class="uses_list">Gallium is also used in the production of artificial gadolinium gallium garnet for jewelry. Gallium is considered a technology-critical element.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="30ZINC.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="32GERMANIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

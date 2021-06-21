@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Thorium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>THORIUM</h2>
+
+      <div id="intro">
+         Thorium is a weakly radioactive metallic chemical element with the symbol Th and atomic number 90. Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately hard, malleable, and has a high melting point. Thorium is an electropositive actinide whose chemistry is dominated by the +4 oxidation state; it is quite reactive and can ignite in air when finely divided.
+         All known thorium isotopes are unstable. The most stable isotope, 232Th, has a half-life of 14.05 billion years, or about the age of the universe; it decays very slowly via alpha decay, starting a decay chain named the thorium series that ends at stable 208Pb.  <a href="https://en.wikipedia.org/wiki/thorium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 2023 K ​(1750 °C, ​3182 °F)</li>
+            <li class="phy_list">Boiling point - 5061 K ​(4788 °C, ​8650 °F)</li>
+            <li class="phy_list">Density - 11.7 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 13.81 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 514 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 26.23 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - face-centred cubic (fcc)</li>
+            <li class="che_list">Thermal expansion - 11 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 54 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 157 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 79 GPa</li>
+            <li class="che_list">Bulk modulus - 54 GPa</li>
+            <li class="che_list">CAS Number - 	7440-29-1</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF THORIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Most thorium applications use its dioxide (sometimes called "thoria" in the industry), rather than the metal. This compound has a melting point of 3300 °C (6000 °F), the highest of all known oxides; only a few substances have higher melting points.</li>
+            <li class="uses_list">Energy, some of it in the form of visible light, is emitted when thorium is exposed to a source of energy itself, such as a cathode ray, heat, or ultraviolet light. This effect is shared by cerium dioxide, which converts ultraviolet light into visible light more efficiently, but thorium dioxide gives a higher flame temperature, emitting less infrared light.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="89ACTINIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="91PROTACTINIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>
