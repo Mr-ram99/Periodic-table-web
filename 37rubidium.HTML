@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RUBIDIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>RUBIDIUM</h2>
+      <div id="intro">
+         Rubidium is the chemical element with the symbol Rb and atomic number 37. Rubidium is a very soft, silvery-white metal in the alkali metal group. Rubidium metal shares similarities to potassium metal and caesium metal in physical appearance, softness and conductivity.
+         Rubidium cannot be stored under atmospheric oxygen, as a highly exothermic reaction will ensue, sometimes even resulting in the metal catching fire.<a href="https://en.wikipedia.org/wiki/Rubidium">More...</a>
+      </div>
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 312.45 K ​(39.30 °C, ​102.74 °F)</li>
+            <li class="phy_list">Boiling point - 961 K ​(688 °C, ​1270 °F)</li>
+            <li class="phy_list">Density (at liquid) - 1.46 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 2.19</li>
+            <li class="phy_list">Heat of vaporization - 69 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 31.06 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​body-centered cubic (bcc)</li>
+            <li class="che_list">Thermal expansion - 90 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 58.2 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 128 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 2.4 GPa</li>
+            <li class="che_list">Bulk modulus - 2.5 GPa</li>
+            <li class="che_list">CAS Number - 	7440-17-7</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF RUBIDIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Rubidium compounds are sometimes used in fireworks to give them a purple color.</li>
+            <li class="uses_list">Rubidium has also been considered for use in a thermoelectric generator using the magnetohydrodynamic principle.</li>
+            <li class="uses_list">Rubidium has been used for polarizing 3He, producing volumes of magnetized 3He gas, with the nuclear spins aligned rather than random.</li>
+            <li class="uses_list"> Rubidium, particularly vaporized 87Rb, is one of the most commonly used atomic species employed for laser cooling and Bose–Einstein condensation.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="36KRYPTON.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="38STRONTIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>STRONTIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>STRONTIUM</h2>
+
+      <div id="intro">
+         Strontium is the chemical element with the symbol Sr and atomic number 38. An alkaline earth metal, strontium is a soft silver-white yellowish metallic element that is highly chemically reactive. The metal forms a dark oxide layer when it is exposed to air. 
+         Strontium has physical and chemical properties similar to those of its two vertical neighbors in the periodic table, calcium and barium. It occurs naturally mainly in the minerals celestine and strontianite, and is mostly mined from these.<a href="https://en.wikipedia.org/wiki/Strontium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1050 K ​(777 °C, ​1431 °F)</li>
+            <li class="phy_list">Boiling point - 1650 K ​(1377 °C, ​2511 °F)</li>
+            <li class="phy_list">Density (at liquid) - 2.375 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 7.43 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 141 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 26.4 J/(mol·K</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​face-centered cubic (fcc)</li>
+            <li class="che_list">Thermal expansion - 22.4 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 35.4 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 132 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 15.7 GPa</li>
+            <li class="che_list">CAS Number - 	7440-24-6</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF STRONTIUM</h3>
+         <ul class="list">
+            <li class="uses_list"> The primary use for strontium was in glass for colour television cathode ray tubes, where it prevented X-ray emission.</li>
+            <li class="uses_list">87Sr/86Sr ratios are commonly used to determine the likely provenance areas of sediment in natural systems, especially in marine and fluvial environments.</li>
+            <li class="uses_list">Because strontium is so similar to calcium, it is incorporated in the bone.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="37RUBIDIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="39YTTRIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

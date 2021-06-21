@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Francium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>FRANCIUM</h2>
+
+      <div id="intro">
+         Francium is a chemical element with the symbol Fr and atomic number 87. Prior to its discovery, it was referred to as eka-caesium. It is extremely radioactive; its most stable isotope, francium-223 (originally called actinium K after the natural decay chain it appears in), has a half-life of only 22 minutes. It is the second-most electropositive element, behind only caesium, and is the second rarest naturally occurring element (after astatine). The isotopes of francium decay quickly into astatine, radium, and radon. The electronic structure of a francium atom is [Rn] 7s1, and so the element is classed as an alkali metal.<a href="https://en.wikipedia.org/wiki/francium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 281.0 K ​(8.0 °C, ​46.4 °F) (estimated)</li>
+            <li class="phy_list">Boiling point - 890 K ​(620 °C, ​1150 °F) (estimated)</li>
+            <li class="phy_list">Density - 2.48 g/cm3</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - body-centered cubic (bcc)</li>
+            <li class="che_list">Magnetic ordering	- Paramagnetic</li>
+            <li class="che_list">Thermal conductivity - 15 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 3 nΩ·m (at 20 °C)</li>
+            <li class="che_list">CAS Number - 	7440-73-5</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF FRANCIUM</h3>
+         <ul class="list">
+            <li class="uses_list">Due to its instability and rarity, there are no commercial applications for francium. It has been used for research purposes in the fields of chemistry and of atomic structure. Its use as a potential diagnostic aid for various cancers has also been explored, but this application has been deemed impractical.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="86RADON.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="88RADIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

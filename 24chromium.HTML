@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CHROMIUM</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>CHROMIUM</h2>
+
+      <div id="intro">
+         Chromium is a chemical element with the symbol Cr and atomic number 24. It is the first element in group 6. It is a steely-grey, lustrous, hard and brittle transition metal. Chromium is the main additive in stainless steel, to which it adds anti-corrosive properties. Chromium is also highly valued as a metal that is able to be highly polished while resisting tarnishing. Polished chromium reflects almost 70% of the visible spectrum, with almost 90% of infrared light being reflected. The name of the element is derived from the Greek word χρῶμα, chrōma, meaning color, because many chromium compounds are intensely colored.
+         Chromium metal is of high value for its high corrosion resistance and hardness. A major development in steel production was the discovery that steel could be made highly resistant to corrosion and discoloration by adding metallic chromium to form stainless steel. Stainless steel and chrome plating (electroplating with chromium) together comprise 85% of the commercial use.<a href="https://en.wikipedia.org/wiki/chromium">More...</a>
+
+      </div>
+
+  
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 2180 K ​(1907 °C, ​3465 °F)</li>
+            <li class="phy_list">Boiling point - 2944 K ​(2671 °C, ​4840 °F)</li>
+            <li class="phy_list">Density (at liquid) - 6.3 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 21.0 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 347 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 23.35 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - ​body-centered cubic (bcc)</li>
+            <li class="che_list">Thermal expansion - 4.9 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 93.9 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 125 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 279 GPa</li>
+            <li class="che_list">Bulk modulus - 160 GPa</li>
+            <li class="che_list">CAS Number - 	7440-47-2</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>GENERAL USES OF CHROMIUM</h3>
+         <ul class="list">
+            <li class="uses_list">The creation of metal alloys account for 85% of the available chromium's usage. The remainder of chromium is used in the chemical, refractory, and foundry industries.</li>
+            <li class="uses_list">Chromium(III) ions present in corundum crystals (aluminium oxide) cause them to be colored red; when corundum appears as such, it is known as a ruby.</li>
+            <li class="uses_list">Because of their toxicity, chromium(VI) salts are used for the preservation of wood. </li>
+            <li class="uses_list">Several chromium compounds are used as catalysts for processing hydrocarbons.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="23VANADIUM.html" >Prev</a>
+      </div>
+      <div id="next">
+         <a href="25MANGANESE.HTML" >Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

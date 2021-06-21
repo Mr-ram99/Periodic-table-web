@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lead</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>LEAD</h2>
+
+    <div id="intro">
+        Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. When freshly cut, lead is silvery with a hint of blue; it tarnishes to a dull gray color when exposed to air.
+        Lead has the highest atomic number of any stable element and three of its isotopes are endpoints of major nuclear decay chains of heavier elements.    
+        Lead is a relatively unreactive post-transition metal. Its weak metallic character is illustrated by its amphoteric nature; lead and lead oxides react with acids and bases, and it tends to form covalent bonds. Compounds of lead are usually found in the +2 oxidation state rather than the +4 state common with lighter members of the carbon group.
+        Exceptions are mostly limited to organolead compounds. Like the lighter members of the group, lead tends to bond with itself; it can form chains and polyhedral structures.<a href="https://en.wikipedia.org/wiki/lead">More...</a>
+    </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 600.61 K ​(327.46 °C, ​621.43 °F)</li>
+            <li class="phy_list">Boiling point - 2022 K ​(1749 °C, ​3180 °F)</li>
+            <li class="phy_list">Density (at liquid) - 10.66 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 4.77 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 179.5 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 26.65 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - face-centered cubic (fcc)</li>
+            <li class="che_list">Thermal expansion - 28.9 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 35.3 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 208 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 116 GPa</li>
+            <li class="che_list">Bulk modulus - 46 GPa</li>
+            <li class="che_list">CAS Number - 	7439-92-1</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF LEAD</h3>
+         <ul class="list">
+            <li class="uses_list">Contrary to popular belief, pencil leads in wooden pencils have never been made from lead. When the pencil originated as a wrapped graphite writing tool, the particular type of graphite used was named plumbago (literally, act for lead or lead mockup).</li>
+            <li class="uses_list">Lead metal has several useful mechanical properties, including high density, low melting point, ductility, and relative inertness.</li>
+            <li class="uses_list">ead has been used for bullets since their invention in the Middle Ages. It is inexpensive; its low melting point means small arms ammunition and shotgun pellets can be cast with minimal technical equipment; and it is denser than other common metals, which allows for better retention of velocity.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="81thallium.html">Prev</a>
+      </div>
+      <div id="next">
+         <a href="83BISMUTH.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

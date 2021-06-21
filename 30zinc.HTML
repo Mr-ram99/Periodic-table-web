@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ZINC</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>ZINC</h2>
+
+      <div id="intro">
+         Zinc is a chemical element with the symbol Zn and atomic number 30. Zinc is a slightly brittle metal at room temperature and has a blue-silvery appearance when oxidation is removed. It is the first element in group 12 (IIB) of the periodic table. In some respects, zinc is chemically similar to magnesium: both elements exhibit only one normal oxidation state (+2), and the Zn2+ and Mg2+ ions are of similar size. Zinc is the 24th most abundant element in Earth's crust and has five stable isotopes.
+         The most common zinc ore is sphalerite (zinc blende), a zinc sulfide mineral. The largest workable lodes are in Australia, Asia, and the United States. Zinc is refined by froth flotation of the ore, roasting, and final extraction using electricity (electrowinning).<a href="https://en.wikipedia.org/wiki/zinc">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 692.68 K ​(419.53 °C, ​787.15 °F)</li>
+            <li class="phy_list">Boiling point - 1180 K ​(907 °C, ​1665 °F)</li>
+            <li class="phy_list">Density (at liquid) - 6.57 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 7.32 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 115 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 25.47 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - hexagonal close-packed (hcp)</li>
+            <li class="che_list">Thermal expansion - 30.2 µm/(m·K) (at 25 °C)</li>
+            <li class="che_list">Thermal conductivity - 116 W/(m·K)</li>
+            <li class="che_list">Electrical resistivity	- 59 nΩ·m (at 20 °C)</li>
+            <li class="che_list">Young's modulus - 108 GPa</li>
+            <li class="che_list">Bulk modulus - 70 GPa</li>
+            <li class="che_list">CAS Number - 	7440-66-6</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF ZINC</h3>
+         <ul class="list">
+            <li class="uses_list">Zinc is most commonly used as an anti-corrosion agent, and galvanization (coating of iron or steel) is the most familiar form.</li>
+            <li class="uses_list">Zinc is more reactive than iron or steel and thus will attract almost all local oxidation until it completely corrodes away.</li>
+            <li class="uses_list">The zinc is applied electrochemically or as molten zinc by hot-dip galvanizing or spraying. </li>
+            <li class="uses_list">A widely used zinc alloy is brass, in which copper is alloyed with anywhere from 3% to 45% zinc, depending upon the type of brass.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="29COPPER.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="31GALIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

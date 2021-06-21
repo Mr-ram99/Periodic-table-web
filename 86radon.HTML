@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Radon</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>RADON</h2>
+
+      <div id="intro">
+         Radon is a chemical element with the symbol Rn and atomic number 86. It is a radioactive, colorless, odorless, tasteless noble gas. It occurs naturally in minute quantities as an intermediate step in the normal radioactive decay chains through which thorium and uranium slowly decay into lead and various other short-lived radioactive elements. Radon itself is the immediate decay product of radium. Its most stable isotope, 222Rn, has a half-life of only 3.8 days, making it one of the rarest elements.
+         Since thorium and uranium are two of the most common radioactive elements on Earth, while also having three isotopes with half-lives on the order of several billion years, radon will be present on Earth long into the future despite its short half-life. The decay of radon produces many other short-lived nuclides, known as radon daughters, ending at stable isotopes of lead.<a href="https://en.wikipedia.org/wiki/radon">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - gas</li>
+            <li class="phy_list">Melting point - 202 K ​(−71 °C, ​−96 °F)</li>
+            <li class="phy_list">Boiling point - 211.5 K ​(−61.7 °C, ​−79.1 °F)</li>
+            <li class="phy_list">Density (at liquid) - 4.4 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 3.24 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 18.10 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 5R/2 = 20.786 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - face-centered cubic (fcc)</li>
+            <li class="che_list">Thermal conductivity - 3.61×10^−3 W/(m-K)</li>
+            <li class="che_list">Magnetic ordering	- non-magnetic</li>
+            <li class="che_list">CAS Number - 10043-92-2</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF RADON</h3>
+         <ul class="list">
+            <li class="uses_list">Exposure to radon has been suggested to mitigate autoimmune diseases such as arthritis in a process known as radiation hormesis.</li>
+            <li class="uses_list">Radium-rich springs are also used in traditional Japanese onsen in Misasa, Tottori Prefecture.</li>
+            <li class="uses_list">Radon has been produced commercially for use in radiation therapy, but for the most part has been replaced by radionuclides made in particle accelerators and nuclear reactors.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="85ASTATINE.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="87FRANCIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>

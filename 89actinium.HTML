@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Actinium</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="Elementpagecss.css">
+</head>
+
+<body>
+   <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">Chem4fun.tech</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactpage.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+         </header>
+
+   <h2>ACTINIUM</h2>
+
+      <div id="intro">
+         Actinium is a chemical element with the symbol Ac and atomic number 89. It was first isolated by French chemist André-Louis Debierne in 1899. Friedrich Oskar Giesel later independently isolated it in 1902 and, unaware that it was already known, gave it the name emanium.
+         Actinium gave the name to the actinide series, a group of 15 similar elements between actinium and lawrencium in the periodic table. It is also sometimes considered the first of the 7th-period transition metals, although lawrencium is less commonly given that position. Together with polonium, radium, and radon, actinium was one of the first non-primordial radioactive elements to be isolated.<a href="https://en.wikipedia.org/wiki/actinium">More...</a>
+      </div>
+
+   <section>
+
+      <div class="item">
+         <h3>PHYSICAL PROPERITIES</h3>
+         <ul class="list">
+            <li class="phy_list">Phase at STP - solid</li>
+            <li class="phy_list">Melting point - 1500 K ​(1227 °C, ​2240 °F) (estimated)</li>
+            <li class="phy_list">Boiling point - 3500±300 K ​(3200±300 °C, ​5800±500 °F) (extrapolated)</li>
+            <li class="phy_list">Density - 10 g/cm3</li>
+            <li class="phy_list">Heat of fusion - 14 kJ/mol</li>
+            <li class="phy_list">Heat of vaporization - 400 kJ/mol</li>
+            <li class="phy_list">Molar heat capacity - 27.2 J/(mol·K)</li>
+         </ul>
+      </div>
+
+
+      <div class="item">
+         <h3>OTHER PROPERITIES</h3>
+         <ul class="list">
+            <li class="che_list">Crystal structure - face-centered cubic (fcc)</li>
+            <li class="che_list">Thermal conductivity - 12 W/(m·K)</li>
+            <li class="che_list">CAS Number - 	7440-34-8</li>
+         </ul>
+      </div>
+
+      <div class="item">
+         <h3>USES OF ACTINIUM</h3>
+         <ul class="list">
+            <li class="uses_list">225Ac is applied in medicine to produce 213Bi in a reusable generator or can be used alone as an agent for radiation therapy, in particular targeted alpha therapy (TAT).</li>
+            <li class="uses_list">The 227AcBe neutron sources can be applied in a neutron probe – a standard device for measuring the quantity of water present in soil, as well as moisture/density for quality control in highway construction.</li>
+         </ul>
+
+
+      </div>
+   </section>
+   <section id="prev_next">
+      <div id="prev">
+         <a href="88RADIUM.HTML">Prev</a>
+      </div>
+      <div id="next">
+         <a href="90THORIUM.HTML">Next</a>
+      </div>
+   </section>
+   <hr> <footer>
+      <div id="copyright">
+         2021 © Chem4fun.tech | All right reserved.
+      </div>
+   </footer>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() 
+        {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+}
+    </script>
+</body>
+
+</html>
